@@ -1,0 +1,647 @@
+{
+  "rosterType": "T1R",
+  "monthType": "T2M",
+  "roster": {
+    "weekLabel": "Mar 30 to Apr 05, 2026",
+    "storageKey": "tsv_sigs_mar30toapr052026_5jl1dh",
+    "rows": [
+      {
+        "day": "Mon",
+        "date": "30 Mar 2026",
+        "time": "PM - Any Activity",
+        "duty": "TSV Admin",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Tue",
+        "date": "31 Mar 2026",
+        "time": "PM - Any Activity",
+        "duty": "TSV Admin",
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
+      },
+      {
+        "day": "Wed",
+        "date": "01 Apr 2026",
+        "time": "6:30 AM - Worship Service",
+        "duty": "TSV Admin",
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
+      },
+      {
+        "day": "Wed",
+        "date": "01 Apr 2026",
+        "time": "6:30 AM - Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Assigned by Choir Leaders"
+      },
+      {
+        "day": "Wed",
+        "date": "01 Apr 2026",
+        "time": "6:30 AM - Worship Service",
+        "duty": "AV Monitor",
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
+      },
+      {
+        "day": "Wed",
+        "date": "01 Apr 2026",
+        "time": "8:00 PM  - Worship Service",
+        "duty": "TSV Admin",
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
+      },
+      {
+        "day": "Wed",
+        "date": "01 Apr 2026",
+        "time": "8:00 PM  - Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Assigned by Choir Leaders"
+      },
+      {
+        "day": "Wed",
+        "date": "01 Apr 2026",
+        "time": "8:00 PM  - Worship Service",
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Thu",
+        "date": "02 Apr 2026",
+        "time": "PM - Any Activity",
+        "duty": "TSV Admin",
+        "name": "Adrian Dela Cruz",
+        "id": "adrian-dela-cruz"
+      },
+      {
+        "day": "Fri",
+        "date": "03 Apr 2026",
+        "time": "PM - Any Activity",
+        "duty": "TSV Admin",
+        "name": "Jonathan Au",
+        "id": "jonathan-au"
+      },
+      {
+        "day": "Sat",
+        "date": "04 Apr 2026",
+        "time": "6:00 PM - Worship Service",
+        "duty": "TSV Admin",
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
+      },
+      {
+        "day": "Sat",
+        "date": "04 Apr 2026",
+        "time": "6:00 PM - Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Assigned by Choir Leaders"
+      },
+      {
+        "day": "Sat",
+        "date": "04 Apr 2026",
+        "time": "6:00 PM - Worship Service",
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Sun",
+        "date": "05 Apr 2026",
+        "time": "8:00 AM - Worship Service",
+        "duty": "TSV Admin",
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
+      },
+      {
+        "day": "Sun",
+        "date": "05 Apr 2026",
+        "time": "8:00 AM - Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Assigned by Choir Leaders"
+      },
+      {
+        "day": "Sun",
+        "date": "05 Apr 2026",
+        "time": "8:00 AM - Worship Service",
+        "duty": "AV Monitor",
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
+      }
+    ],
+    "officers": [
+      {
+        "role": "Coordinating Head Deacon",
+        "name": "Jonathan Au",
+        "id": "jonathan-au"
+      },
+      {
+        "role": "Resident Minister",
+        "name": "Karl Alvarez",
+        "id": null
+      }
+    ]
+  },
+  "monthly": {
+    "month": "Mar 30 to May 03, 2026",
+    "monthType": "T2M",
+    "entries": [
+      {
+        "date": 30,
+        "month": 2,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 31,
+        "month": 2,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 1,
+        "month": 3,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 1,
+        "month": 3,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 2,
+        "month": 3,
+        "day": "Thu",
+        "time": "Any Activity",
+        "names": [
+          "Adrian"
+        ]
+      },
+      {
+        "date": 3,
+        "month": 3,
+        "day": "Fri",
+        "time": "Any Activity",
+        "names": [
+          "Jonathan"
+        ]
+      },
+      {
+        "date": 4,
+        "month": 3,
+        "day": "Sat",
+        "time": "6:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 5,
+        "month": 3,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 6,
+        "month": 3,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 7,
+        "month": 3,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 8,
+        "month": 3,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 8,
+        "month": 3,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 9,
+        "month": 3,
+        "day": "Thu",
+        "time": "Any Activity",
+        "names": [
+          "Dwight"
+        ]
+      },
+      {
+        "date": 10,
+        "month": 3,
+        "day": "Fri",
+        "time": "Any Activity",
+        "names": [
+          "Jonathan"
+        ]
+      },
+      {
+        "date": 11,
+        "month": 3,
+        "day": "Sat",
+        "time": "6:00 PM",
+        "names": [
+          "Karez",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 12,
+        "month": 3,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Dwight"
+        ]
+      },
+      {
+        "date": 13,
+        "month": 3,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 14,
+        "month": 3,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 15,
+        "month": 3,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 15,
+        "month": 3,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 16,
+        "month": 3,
+        "day": "Thu",
+        "time": "Any Activity",
+        "names": [
+          "Adrian"
+        ]
+      },
+      {
+        "date": 17,
+        "month": 3,
+        "day": "Fri",
+        "time": "Any Activity",
+        "names": [
+          "Jonathan"
+        ]
+      },
+      {
+        "date": 18,
+        "month": 3,
+        "day": "Sat",
+        "time": "6:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 19,
+        "month": 3,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 20,
+        "month": 3,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 21,
+        "month": 3,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 22,
+        "month": 3,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 22,
+        "month": 3,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 23,
+        "month": 3,
+        "day": "Thu",
+        "time": "Any Activity",
+        "names": [
+          "Dwight"
+        ]
+      },
+      {
+        "date": 24,
+        "month": 3,
+        "day": "Fri",
+        "time": "Any Activity",
+        "names": [
+          "Jonathan"
+        ]
+      },
+      {
+        "date": 25,
+        "month": 3,
+        "day": "Sat",
+        "time": "6:00 PM",
+        "names": [
+          "Karez",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 26,
+        "month": 3,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Dwight"
+        ]
+      },
+      {
+        "date": 27,
+        "month": 3,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 28,
+        "month": 3,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 29,
+        "month": 3,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 29,
+        "month": 3,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 30,
+        "month": 3,
+        "day": "Thu",
+        "time": "Any Activity",
+        "names": [
+          "Adrian"
+        ]
+      },
+      {
+        "date": 1,
+        "month": 4,
+        "day": "Fri",
+        "time": "Any Activity",
+        "names": [
+          "Jonathan"
+        ]
+      },
+      {
+        "date": 2,
+        "month": 4,
+        "day": "Sat",
+        "time": "6:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 3,
+        "month": 4,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "HD Reserve"
+        ]
+      }
+    ]
+  },
+  "members": [
+    {
+      "fullName": "Jonathan Au",
+      "firstName": "Jonathan",
+      "id": "jonathan-au",
+      "phone": "0420 721 244",
+      "email": "than.au@hotmail.com",
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Ronnie Cunanan",
+      "firstName": "Ronnie",
+      "id": "ronnie-cunanan",
+      "phone": "0400 387 866",
+      "email": "rbcunanan@yahoo.com",
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Jay Beltran",
+      "firstName": "Jay",
+      "id": "jay-beltran",
+      "phone": "0418 119 551",
+      "email": "jay.beltranism@gmail.com",
+      "cat": "TSV",
+      "user": "Admin"
+    },
+    {
+      "fullName": "Karez Bartolo",
+      "firstName": "Karez",
+      "id": "karez-bartolo",
+      "phone": "0415 232 985",
+      "email": "karez_dana@hotmail.com",
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Dwight Alegros",
+      "firstName": "Dwight",
+      "id": "dwight-alegros",
+      "phone": "0432 879 419",
+      "email": "dsualegros@gmail.com",
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Adrian Dela Cruz",
+      "firstName": "Adrian",
+      "id": "adrian-dela-cruz",
+      "phone": "0426 728 722",
+      "email": "delacruz.s.adrian@gmail.com",
+      "cat": "CHOIR TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Jerick Dadios",
+      "firstName": "Jerick",
+      "id": "jerick-dadios",
+      "phone": "0400 608 012",
+      "email": "jerick.dadios@gmail.com",
+      "cat": "CHOIR TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Choir Leaders",
+      "firstName": "Choir Leaders",
+      "id": "choir-leaders",
+      "phone": null,
+      "email": null,
+      "cat": "CHOIR TSV",
+      "user": null
+    }
+  ],
+  "pins": {
+    "Jonathan Au": "111111",
+    "Ronnie Cunanan": "222222",
+    "Jay Beltran": "333333",
+    "Karez Bartolo": "444444",
+    "Dwight Alegros": "555555",
+    "Adrian Dela Cruz": "666666",
+    "Jerick Dadios": "777777",
+    "Choir Leaders": "888888"
+  },
+  "onLeave": []
+}
