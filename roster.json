@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Mar 30 to Apr 05, 2026",
-    "storageKey": "tsv_sigs_mar30toapr052026_20260329020734",
+    "storageKey": "tsv_sigs_mar30toapr052026_20260329022622",
     "rows": [
       {
         "day": "Mon",
@@ -36,7 +36,7 @@
         "duty": "HVO",
         "name": "TBA",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
@@ -62,7 +62,7 @@
         "duty": "HVO",
         "name": "TBA",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
@@ -103,7 +103,7 @@
         "duty": "HVO",
         "name": "TBA",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Sat",
@@ -128,7 +128,7 @@
         "duty": "HVO",
         "name": "TBA",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Sun",
