@@ -1,4 +1,11 @@
 {
   "storageKey": "tsv_sigs_mar30toapr052026_20260329020734",
-  "sigs": {}
+  "sigs": {
+    "row_1": {
+      "data": "Jay Beltran",
+      "type": "type",
+      "ts": "29 Mar 2026, 02:10 am",
+      "memberName": "__admin__"
+    }
+  }
 }
