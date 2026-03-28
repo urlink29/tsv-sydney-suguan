@@ -567,7 +567,7 @@
       "phone": "0420 721 244",
       "email": "than.au@hotmail.com",
       "cat": "TSV",
-      "user": "Signer"
+      "user": "Admin"
     },
     {
       "fullName": "Ronnie Cunanan",
@@ -576,7 +576,7 @@
       "phone": "0400 387 866",
       "email": "rbcunanan@yahoo.com",
       "cat": "TSV",
-      "user": "Signer"
+      "user": "Admin"
     },
     {
       "fullName": "Jay Beltran",
@@ -624,6 +624,15 @@
       "user": "Signer"
     },
     {
+      "fullName": "Ethan Au",
+      "firstName": "Ethan",
+      "id": "ethan-au",
+      "phone": "0468 440 100",
+      "email": "lorenzoau21@gmail.com",
+      "cat": "CHOIR TSV",
+      "user": "Signer"
+    },
+    {
       "fullName": "Choir Leaders",
       "firstName": "Choir Leaders",
       "id": "choir-leaders",
@@ -641,6 +650,7 @@
     "Dwight Alegros": "555555",
     "Adrian Dela Cruz": "666666",
     "Jerick Dadios": "777777",
+    "Ethan Au": "999999",
     "Choir Leaders": "888888"
   },
   "onLeave": []
