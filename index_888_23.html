@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Sydney TSV Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f5; color: #0f1f35; min-height: 100vh; }
+
+header {
+  background: #0f1f35; color: #fff; height: 52px;
+  display: flex; align-items: center; padding: 0 20px;
+  font-size: 15px; font-weight: 600; gap: 10px;
+}
+.logo-mark {
+  width: 28px; height: 28px; background: #3d5068;
+  border-radius: 6px; display: flex; align-items: center;
+  justify-content: center; font-size: 12px; font-weight: 700;
+}
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; }
+
+h2 { font-size: 18px; font-weight: 700; color: #0f1f35; margin-bottom: 4px; }
+.sub { font-size: 13px; color: #6b7280; margin-bottom: 20px; }
+
+.card {
+  background: #fff; border: 1px solid #e2e4e8;
+  border-radius: 12px; overflow: hidden;
+  box-shadow: 0 1px 8px rgba(15,31,53,0.08);
+  margin-bottom: 16px;
+}
+.card-head {
+  background: #0f1f35; color: #fff;
+  padding: 10px 16px; font-size: 12px;
+  font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  background: #3d5068; color: #fff;
+  padding: 10px 12px; text-align: center;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+th:last-child { border-right: none; }
+td { padding: 9px 12px; border-bottom: 1px solid #d0d4da; border-right: 1px solid #d0d4da; text-align: center; vertical-align: middle; }
+td:last-child { border-right: none; }
+tr.day-first td { border-top: 2px solid #8a9ab0; }
+tr.worship td { background-color: #f0f4fa; }
+tr.worship td.day { background-color: #d8e4f0; }
+tr:last-child td { border-bottom: none; }
+td.day { font-weight: 700; background: #e8ecf2; white-space: nowrap; border-right: 2px solid #8a9ab0; }
+td.muted { color: #6b7280; font-size: 12px; }
+td.time { font-size: 13px; color: #0f1f35; font-weight: 500; }
+td.name { font-weight: 500; }
+
+.sig-btn {
+  background: #3d5068; color: #fff; border: none;
+  border-radius: 6px; padding: 5px 14px; font-size: 12px;
+  font-weight: 500; cursor: pointer; font-family: 'Inter', sans-serif;
+}
+.sig-btn:hover { background: #0f1f35; }
+.sig-btn-muted {
+  background: #c8d0dc; color: #5a6a7a; border: none;
+  border-radius: 6px; padding: 5px 14px; font-size: 12px;
+  font-family: 'Inter', sans-serif; cursor: not-allowed;
+  font-weight: 500;
+}
+.sig-done { font-family: 'Dancing Script', cursive; font-size: 21px; color: #0f1f35; }
+.sig-ts { font-size: 8px; color: #a8adb8; display: block; margin-top: 1px; letter-spacing: 0.02em; }
+.sig-wrap { position: relative; display: inline-block; }
+.sig-clear {
+  position: absolute; top: -4px; right: -8px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #e2e4e8; border: none; cursor: pointer;
+  font-size: 9px; color: #6b7280; line-height: 14px;
+  text-align: center; padding: 0; opacity: 0;
+  transition: opacity .15s;
+}
+.sig-wrap:hover .sig-clear { opacity: 1; }
+.sig-clear:hover { background: #dc2626; color: #fff; }
+.greyed { color: #a8adb8; background: #f4f4f5; font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid #e2e4e8; display: inline-block; }
+.italic { font-style: italic; color: #6b7280; }
+.skip { font-size: 11px; color: #a8adb8; font-style: italic; }
+
+.officer-table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+.officer-table td { padding: 10px 14px; border-bottom: 1px solid #e2e4e8; border-right: 1px solid #e2e4e8; text-align: center; vertical-align: middle; overflow: hidden; }
+.officer-table td:first-child { border-left: none; width: 220px; }
+.officer-table td:last-child { border-right: none; width: 220px; }
+.officer-table tr:last-child td { border-bottom: none; }
+.officer-table .role { font-weight: 600; background: #e8ecf2; }
+
+/* Modal */
+.backdrop {
+  display: none; position: fixed; inset: 0;
+  background: rgba(15,31,53,0.55); z-index: 100;
+  align-items: center; justify-content: center; padding: 20px;
+}
+.backdrop.open { display: flex; }
+.modal {
+  background: #fff; border-radius: 14px; padding: 24px;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 4px 24px rgba(15,31,53,0.18);
+}
+.modal h3 { font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+.modal .ctx { font-size: 12px; color: #6b7280; margin-bottom: 16px; }
+.tabs { display: flex; border: 1.5px solid #e2e4e8; border-radius: 8px; overflow: hidden; margin-bottom: 14px; }
+.tab { flex: 1; padding: 8px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; border: none; background: #fff; cursor: pointer; color: #6b7280; }
+.tab.on { background: #0f1f35; color: #fff; }
+.pane { display: none; }
+.pane.on { display: block; }
+label { display: block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; margin-bottom: 5px; }
+input[type=text] { width: 100%; padding: 9px 12px; border: 1.5px solid #e2e4e8; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 14px; outline: none; }
+input[type=text]:focus { border-color: #0f1f35; }
+.preview { font-family: 'Dancing Script', cursive; font-size: 30px; color: #0f1f35; text-align: center; padding: 14px; border: 1.5px solid #e2e4e8; border-radius: 8px; min-height: 68px; display: flex; align-items: center; justify-content: center; margin-top: 8px; }
+canvas { width: 100%; height: 120px; border: 1.5px solid #e2e4e8; border-radius: 8px; cursor: crosshair; touch-action: none; display: block; background: #fff; }
+.upload-zone { border: 2px dashed #e2e4e8; border-radius: 8px; padding: 20px; text-align: center; cursor: pointer; }
+.upload-zone:hover { border-color: #3d5068; background: #f0f4f8; }
+.upload-zone p { font-size: 13px; color: #6b7280; }
+#sig-preview { max-width: 100%; max-height: 80px; display: none; margin-top: 8px; border-radius: 6px; }
+.modal-btns { display: flex; gap: 10px; margin-top: 16px; }
+.btn { padding: 9px 16px; border-radius: 8px; border: 1.5px solid #e2e4e8; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; flex: 1; }
+.btn-cancel { background: #fff; color: #0f1f35; }
+.btn-confirm { background: #16a34a; color: #fff; border-color: #16a34a; }
+.btn-confirm:hover { filter: brightness(1.1); }
+
+/* ── LANDING SCREEN ── */
+#landing {
+  min-height: calc(100vh - 52px);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-start;
+  padding: 32px 16px 40px; background: #f4f4f5;
+}
+.landing-logo { height: 70px; object-fit: contain; mix-blend-mode: multiply; }
+.landing-church { text-align: center; line-height: 1.6; margin-bottom: 28px; }
+.landing-church .c1 { font-size: 15px; font-weight: 600; color: #0f1f35; }
+.landing-church .c2 { font-size: 13px; color: #3d5068; }
+.landing-church .c3 { font-size: 13px; font-weight: 700; color: #0f1f35; margin-top: 4px; }
+.member-grid {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 12px; width: 100%; max-width: 520px; margin-bottom: 20px;
+}
+.member-btn { width: 154px; }
+.member-btn {
+  padding: 16px 12px; border-radius: 12px;
+  border: none; background: #1e3a5f;
+  font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+  color: #fff; cursor: pointer; transition: all .15s; text-align: center;
+  box-shadow: 0 2px 8px rgba(15,31,53,0.18);
+}
+.member-btn:hover { background: #0f1f35; transform: translateY(-2px); box-shadow: 0 4px 14px rgba(15,31,53,0.25); }
+.member-btn:active { transform: scale(0.97); }
+.member-btn.signed { background: #166534; }
+.member-btn.choir { background: #1e3a5f; }
+.member-btn.choir:hover { background: #0f1f35; }
+.member-btn.signed .signed-tick { font-size: 10px; opacity: 0.8; display: block; margin-top: 3px; }
+.landing-prompt { font-size: 14px; font-weight: 600; color: #0f1f35; margin-top: 20px; margin-bottom: 4px; text-align: center; }
+.admin-link { font-size: 12px; color: #a8adb8; cursor: pointer; margin-top: 10px; }
+.admin-link:hover { color: #6b7280; }
+
+/* ── PIN PAD ── */
+.pin-backdrop {
+  display: none; position: fixed; inset: 0;
+  background: rgba(15,31,53,0.6); z-index: 200;
+  align-items: center; justify-content: center;
+}
+.pin-backdrop.open { display: flex; }
+.pin-box {
+  background: #fff; border-radius: 16px; padding: 28px 24px;
+  width: 100%; max-width: 320px; text-align: center;
+  box-shadow: 0 8px 32px rgba(15,31,53,0.2);
+}
+.pin-box h3 { font-size: 16px; font-weight: 700; color: #0f1f35; margin-bottom: 4px; }
+.pin-box .pin-name { font-size: 13px; color: #6b7280; margin-bottom: 20px; }
+.pin-dots { display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; }
+.pin-dot { width: 14px; height: 14px; border-radius: 50%; background: #e2e4e8; transition: background .15s; }
+.pin-dot.filled { background: #0f1f35; }
+.pin-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px; }
+.pin-key {
+  padding: 14px; border: 1.5px solid #e2e4e8; border-radius: 10px;
+  background: #fff; font-size: 20px; font-weight: 600;
+  cursor: pointer; transition: all .12s; color: #0f1f35;
+  font-family: 'Inter', sans-serif;
+}
+.pin-key:hover { border-color: #3d5068; background: #f0f4f8; }
+.pin-key:active { transform: scale(0.95); }
+.pin-key.del { font-size: 14px; }
+.pin-error { font-size: 12px; color: #dc2626; margin-top: 4px; min-height: 18px; }
+.pin-cancel { font-size: 13px; color: #a8adb8; cursor: pointer; text-decoration: underline; }
+.pin-cancel:hover { color: #6b7280; }
+
+/* ── CALENDAR ── */
+#cal-table { table-layout: fixed; border-collapse: collapse; }
+#cal-table th {
+  background: #0f1f35; color: #fff;
+  padding: 8px; text-align: center;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  width: 14.28%;
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+#cal-table th:last-child { border-right: 1px solid rgba(255,255,255,0.15); }
+#cal-table td {
+  vertical-align: top; padding: 4px 5px;
+  border-right: 1px solid #d0d4da;
+  border-top: none; border-bottom: none; border-left: none;
+  width: 14.28%; font-size: 11px;
+}
+#cal-table td:last-child { border-right: 1px solid #d0d4da; }
+#cal-table tr.cal-row-dates td { padding: 5px 6px 3px; }
+#cal-table tr.cal-row-dates td.cal-worship-date { background: #f0f4fa; }
+#cal-table tr.cal-row-am td    { background: #fff; padding: 6px 6px 20px; }
+#cal-table tr.cal-row-am td.cal-worship-am { background: #f0f4fa; padding: 6px 6px 20px; }
+#cal-table tr.cal-row-pm td    { background: #fff; padding: 20px 6px 16px; border-bottom: 3px solid #e2e4e8; }
+#cal-table tr.cal-row-pm td.cal-worship-pm { background: #f0f4fa; padding: 20px 6px 16px; }
+#cal-table tr.cal-row-pm td.cal-empty-cell { background: #fff; }
+.cal-day-num {
+  font-weight: 700; font-size: 18px; color: #0f1f35;
+}
+.cal-time { font-weight: 700; font-size: 9px; display: block; margin-bottom: 2px; }
+.cal-time.am { color: #c0392b; }
+.cal-time.pm { color: #c0392b; }
+.cal-name-line { font-weight: 700; color: #0f1f35; display: block; font-size: 11px; line-height: 1.5; }
+.cal-monitor { color: #444; font-style: italic; display: block; font-size: 10px; line-height: 1.4; margin-top: 1px; }
+.cal-empty-cell { background: #fafafa; }
+
+/* ── VIEW TABS ── */
+.view-tabs {
+  display: none; gap: 0;
+  border-bottom: 2px solid #e2e4e8;
+  margin-bottom: 16px;
+}
+.view-tabs.visible { display: flex; }
+.view-tab {
+  padding: 10px 24px; font-family: 'Inter', sans-serif;
+  font-size: 13px; font-weight: 500; border: none;
+  background: none; cursor: pointer; color: #6b7280;
+  border-bottom: 2.5px solid transparent; margin-bottom: -2px;
+  transition: all .15s;
+}
+.view-tab.active { color: #0f1f35; border-bottom-color: #0f1f35; font-weight: 600; }
+
+.dir-row td { padding: 10px 14px; border-bottom: 1px solid #e2e4e8; color: #0f1f35; }
+.dir-row:last-child td { border-bottom: none; }
+.dir-row a { color: #2563a8; text-decoration: none; }
+.dir-row a:hover { text-decoration: underline; }
+.dir-row:hover td { background: #f4f7fb; }
+
+/* ── MOBILE STYLES (≤ 768px) ── */
+@media (max-width: 768px) {
+
+  /* General */
+  body { font-size: 13px; }
+  .wrap { padding: 12px 10px 60px; }
+  .card { border-radius: 10px; margin-bottom: 12px; }
+  .card-head { padding: 10px 14px; min-height: 40px; font-size: 12px; }
+
+  /* Header */
+  header { padding: 10px 14px; font-size: 13px; }
+  .logo-mark { width: 28px; height: 28px; font-size: 10px; margin-right: 8px; }
+  #header-controls { gap: 6px; }
+  #header-controls button { padding: 4px 8px; font-size: 11px; }
+  #user-label { font-size: 11px; }
+
+  /* View tabs */
+  .view-tabs { gap: 4px; padding: 10px 10px 0; }
+  .view-tab { padding: 7px 10px; font-size: 11px; }
+
+  /* Landing page */
+  .landing-logo { height: 44px; width: auto; margin-bottom: 6px; }
+  #main-logo { height: 30px; width: auto; }
+  .landing-church { text-align: center; margin-bottom: 20px; }
+  .landing-church .c1 { font-size: 11px; }
+  .landing-church .c2 { font-size: 10px; }
+  .landing-church .c3 { font-size: 11px; }
+  .landing-title { font-size: 16px; }
+  .landing-sub   { font-size: 11px; }
+  .landing-prompt { font-size: 12px; margin: 12px 0 10px; }
+  .member-grid { gap: 8px; padding: 0 8px; }
+  .member-btn  { padding: 12px 8px; font-size: 13px; border-radius: 10px; }
+
+  /* Main-view header text — shrink congregation lines & week label */
+  #main-view .wrap > div > div[style*="text-align:right"] > div:not(#week-label) { font-size: 10px !important; }
+  #week-label { font-size: 11px !important; }
+
+  /* Roster table — fixed layout, no scroll */
+  .roster-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #roster-table { width: 100%; table-layout: fixed; font-size: 10px; min-width: unset; }
+  #roster-table th { font-size: 9px; }
+  #roster-table th:nth-child(1) { width: 8%; white-space: nowrap; }   /* Day */
+  #roster-table th:nth-child(2) { width: 14%; }  /* Date */
+  #roster-table th:nth-child(3) { width: 22%; }  /* Time */
+  #roster-table th:nth-child(4) { width: 12%; }  /* Duty */
+  #roster-table th:nth-child(5) { width: 18%; }  /* Name */
+  #roster-table th:nth-child(6) { width: 26%; }  /* Signature */
+  #roster-table td, #roster-table th { padding: 4px 3px; word-break: break-word; font-size: 7px; }
+  td.day  { font-size: 7px; font-weight: 700; color: #3d5068; }
+  td.time { font-size: 7px; }
+  td.muted { font-size: 5px; }
+  .sig-done { font-size: 12px; }
+  .sig-btn  { padding: 3px 6px; font-size: 10px; }
+  .sig-btn-muted { padding: 3px 6px; font-size: 9px; }
+  .skip { font-size: 7px; }
+  td.name { font-size: 10px; }
+
+  /* Officers table */
+  .officer-table { width: 100%; table-layout: fixed; font-size: 10px; }
+  .officer-table td { padding: 6px 6px; word-break: break-word; font-size: 10px; }
+  .officer-table td:first-child  { width: 35%; }
+  .officer-table td:nth-child(2) { width: 35%; }
+  .officer-table td:last-child   { width: 30%; }
+  #officers-card { display: block !important; }
+
+  /* PIN pad */
+  .pin-pad-inner { padding: 20px 16px; }
+  .pin-dot { width: 10px; height: 10px; }
+  .pin-key  { height: 52px; font-size: 18px; }
+  .pin-grid { gap: 8px; }
+
+  /* Modal */
+  .modal-inner { padding: 16px; width: 95vw; max-width: 95vw; }
+  .modal-tabs button { padding: 6px 10px; font-size: 12px; }
+  #sig-canvas { width: 100%; height: 120px; }
+
+  /* Calendar — compress to fit all 7 days */
+  .cal-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #cal-table { min-width: unset; width: 100%; font-size: 9px; table-layout: fixed; }
+  #cal-table td, #cal-table th { padding: 3px 1px; word-break: break-word; }
+  #cal-table th { font-size: 9px; letter-spacing: 0; }
+  .cal-day-num { font-size: 12px; }
+  .cal-time { font-size: 8px; }
+  .cal-name-line { font-size: 7px; }
+  .cal-monitor { font-size: 7px; }
+  .cal-worship-date { background-color: #f0f4fa !important; }
+
+  /* On Leave card */
+  #on-leave-card { padding: 0; }
+
+  /* Directory */
+  .dir-row td { padding: 8px 10px; font-size: 12px; }
+  #dir-wrap table { table-layout: fixed; width: 100%; }
+  #dir-wrap td, #dir-wrap th { word-break: break-word; overflow-wrap: break-word; }
+  #dir-wrap td:nth-child(1), #dir-wrap th:nth-child(1) { width: 28%; }
+  #dir-wrap td:nth-child(2), #dir-wrap th:nth-child(2) { width: 30%; }
+  #dir-wrap td:nth-child(3), #dir-wrap th:nth-child(3) { width: 42%; }
+  #dir-wrap a { word-break: break-all; font-size: 10px; }
+
+  /* Toast */
+  .toast { font-size: 12px; padding: 10px 16px; bottom: 16px; }
+}
+
+/* ── PRINT STYLES ── */
+@media print {
+  @page { size: A4 portrait; margin: 20mm 8mm 10mm 8mm; }
+
+  body { background: #fff !important; }
+
+  /* Hide all UI chrome */
+  header, .view-tabs,
+  .sig-btn, .sig-btn-muted, .sig-clear,
+  #admin-toggle-btn, #print-btn, #logout-btn,
+  #cal-toggle-btn, #user-label,
+  #calendar-view, #directory-view, #on-leave-card,
+  .logo-mark, #print-header { display: none !important; }
+
+  /* Show only the main roster card */
+  .wrap { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+  .card { box-shadow: none !important; border-radius: 0 !important; margin: 0 !important; page-break-inside: avoid; }
+
+  /* Preserve colors */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  tr.worship td { background-color: #f0f4fa !important; }
+  td.day { background-color: #e8ecf2 !important; }
+  .card-head { background-color: #0f1f35 !important; color: #fff !important; }
+  th { background-color: #3d5068 !important; color: #fff !important; }
+
+  /* Tight but readable sizing */
+  td, th { padding: 0 7px !important; font-size: 9.5px !important; height: 22px !important; line-height: 22px !important; white-space: nowrap; overflow: hidden; }
+  td.day  { font-size: 10px !important; font-weight: 700 !important; vertical-align: middle !important; }
+  td.muted, td.time { font-size: 9px !important; }
+  .sig-done { font-family: 'Dancing Script', cursive; font-size: 15px !important; }
+  .sig-wrap { display: inline-block; }
+  .skip { font-size: 8.5px !important; font-style: italic; color: #6b7280 !important; }
+
+  /* Column widths for print */
+  th:nth-child(1), td:nth-child(1) { width: 36px !important; }   /* Day */
+  th:nth-child(2), td:nth-child(2) { width: 64px !important; }   /* Date */
+  th:nth-child(3), td:nth-child(3) { width: 100px !important; }  /* Time */
+  th:nth-child(4), td:nth-child(4) { width: 68px !important; }   /* Duty */
+  th:nth-child(5), td:nth-child(5) { width: 100px !important; }  /* Name */
+  th:last-child,   td:last-child   { width: 180px !important; }  /* Signature */
+
+  /* Officers */
+  .officer-table { table-layout: fixed !important; width: 100% !important; }
+  .officer-table td { padding: 4px 7px !important; font-size: 9px !important; height: 28px !important; vertical-align: middle !important; overflow: hidden !important; }
+  /* Role narrower, Name wider, Signature stays at 32.8% */
+  .officer-table td:first-child  { width: 30% !important; }
+  .officer-table td:nth-child(2) { width: 37.2% !important; }
+  .officer-table td:last-child   { width: 32.8% !important; overflow: hidden !important; }
+  .officer-table .sig-done { font-size: 15px !important; display: block; overflow: hidden; }
+  .officer-table .sig-wrap { overflow: hidden; display: block; }
+  #officers-card { margin-top: 6px !important; }
+  table { width: 100% !important; table-layout: fixed !important; }
+}
+
+
+
+.toast {
+  position: fixed; bottom: 20px; left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: #0f1f35; color: #fff; padding: 10px 22px;
+  border-radius: 30px; font-size: 13px; font-weight: 500;
+  opacity: 0; transition: all .2s; z-index: 999; pointer-events: none;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast.ok { background: #16a34a; }
+.toast.err { background: #dc2626; }
+</style>
+</head>
+<body>
+
+<header>
+  Sydney TSV Portal
+  <div id="header-controls" style="margin-left:auto;display:none;align-items:center;gap:8px;">
+    <span id="user-label" style="font-size:12px;opacity:0.7;"></span>
+    <button id="admin-toggle-btn" onclick="toggleAdminMode()" style="display:none;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.3);color:#fff;border-radius:6px;padding:4px 12px;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;">Admin</button>
+    <button id="print-btn" onclick="printRoster()" style="display:none;align-items:center;gap:5px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;border-radius:6px;padding:4px 12px;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;">🖨 Print</button>
+    <button id="logout-btn" onclick="logout()" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;border-radius:6px;padding:4px 12px;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;">Exit</button>
+  </div>
+</header>
+
+<!-- ── LANDING SCREEN ── -->
+<div id="landing">
+  <img class="landing-logo" src="tsvlogo.png">
+  <div class="landing-church">
+    <div class="c1">Local Congregation of Sydney</div>
+    <div class="c2">District of New South Wales, Australia</div>
+  </div>
+  <div class="member-grid" id="member-grid"></div>
+  <p class="landing-prompt">Click your name to login</p>
+  
+</div>
+
+<div class="wrap">
+
+<!-- ── MAIN ROSTER (hidden until signed in) ── -->
+<div id="main-view" style="display:none;">
+
+  <div class="wrap" style="padding-bottom:0;padding-top:4px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+      <img src="tsvlogo.png" id="main-logo" style="mix-blend-mode:multiply;">
+      <div style="text-align:right;line-height:1.5;">
+        <div style="font-size:13px;color:#6b7280;">Local Congregation of Sydney</div>
+        <div style="font-size:13px;color:#6b7280;">District of New South Wales, Australia</div>
+        <div style="font-size:14px;font-weight:700;color:#0f1f35;" id="week-label">TSV Suguan: Mar 02 to 08, 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TABS ── -->
+  <div class="wrap" style="padding-top:0;padding-bottom:0;">
+    <div class="view-tabs" id="view-tabs">
+      <button class="view-tab active" onclick="switchTab('week')" id="tab-week">This Week</button>
+      <button class="view-tab" onclick="switchTab('month')" id="tab-month">This Month</button>
+      <button class="view-tab" onclick="switchTab('directory')" id="tab-directory">TSV Directory</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head" style="justify-content:flex-end;">
+      <span id="progress-text" style="font-weight:400;font-size:11px;opacity:0.8;"></span>
+    </div>
+    <div class="roster-wrap">
+      <table id="roster-table">
+        <thead>
+          <tr><th>Day</th><th>Date</th><th>Time</th><th>Duty</th><th>Name</th><th>Signature</th></tr>
+        </thead>
+        <tbody id="roster-body"></tbody>
+      </table>
+    </div>
+
+  <div class="card" id="officers-card" style="display:none;">
+    <div class="card-head" style="min-height:40px;"></div>
+    <div style="padding:12px 16px;">
+      <div style="border:1px solid #d0d4da;border-radius:8px;overflow:hidden;">
+        <table class="officer-table" id="officer-body"></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Modal -->
+<div class="backdrop" id="modal">
+  <div class="modal">
+    <h3>Sign Your Duty</h3>
+    <div class="ctx" id="modal-ctx"></div>
+    <div class="tabs">
+      <button class="tab on" onclick="tab('type')">e-Sign</button>
+      <button class="tab" onclick="tab('draw')">Draw</button>
+      <button class="tab" onclick="tab('upload')">Upload</button>
+    </div>
+    <div class="pane on" id="pane-type">
+      <p style="font-size:12px;color:#6b7280;margin-bottom:10px;">Your name will appear as a cursive signature automatically.</p>
+      <div class="preview" id="preview" style="font-size:36px;">Your signature</div>
+    </div>
+    <div class="pane" id="pane-draw">
+      <p style="font-size:12px;color:#6b7280;margin-bottom:6px;">Draw your signature:</p>
+      <canvas id="draw-canvas"></canvas>
+      <div style="text-align:right;margin-top:6px;">
+        <button class="btn btn-cancel" style="flex:none;padding:5px 12px;font-size:12px;" onclick="clearCanvas()">Clear</button>
+      </div>
+    </div>
+    <div class="pane" id="pane-upload">
+      <div class="upload-zone" onclick="document.getElementById('file-input').click()">
+        <div style="font-size:22px;">🖊</div>
+        <p>Click to upload signature image</p>
+      </div>
+      <input type="file" id="file-input" accept="image/*" style="display:none;" onchange="loadImg(this)">
+      <img id="sig-preview" src="" alt="">
+    </div>
+    <div class="modal-btns">
+      <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-confirm" onclick="confirm()">Confirm Signature</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── GitHub API config ──
+var _t1 = 'github_pat_11CAWTG4Q0PkDD681udu3W_';
+var _t2 = 'P8NUZLY6J1LKXQF1XYIHUL1kY4r965YWzH0fUeMZNeKRAX7VQ45oaORHeSR';
+var GITHUB_TOKEN = _t1 + _t2;
+var GITHUB_REPO  = 'urlink29/tsv-sydney-suguan';
+var SIGS_FILE    = 'signatures.json';
+var _sigsFileSHA = null; // GitHub file SHA needed for updates
+
+// ── Fetch signatures.json from GitHub ──
+function fetchSigsFromGitHub(callback) {
+  var url = 'https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + SIGS_FILE;
+  fetch(url, {
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer ' + GITHUB_TOKEN,
+      'Accept': 'application/vnd.github+json'
+    }
+  })
+  .then(function(r) {
+    if (r.status === 404) { _sigsFileSHA = null; callback({}); return null; }
+    return r.json();
+  })
+  .then(function(data) {
+    if (!data) return;
+    if (data.message) { console.error('GitHub API error:', data.message); callback({}); return; }
+    _sigsFileSHA = data.sha;
+    try {
+      var decoded = JSON.parse(atob(data.content.split('\n').join('')));
+      console.log('Signatures loaded OK');
+      callback(decoded);
+    } catch(e) {
+      console.error('Decode error:', e);
+      callback({});
+    }
+  })
+  .catch(function(e) { console.error('Fetch error:', e); callback({}); });
+}
+
+// ── Save signatures.json to GitHub ──
+function saveSigsToGitHub() {
+  if (!window._storageKey) return;
+  var payload = { storageKey: window._storageKey, sigs: sigs };
+  var jsonStr = JSON.stringify(payload, null, 2);
+  var encoded = btoa(encodeURIComponent(jsonStr).replace(/%([0-9A-F]{2})/g, function(m, p1) {
+    return String.fromCharCode('0x' + p1);
+  }));
+  var body = { message: 'Update signatures', content: encoded };
+  if (_sigsFileSHA) body.sha = _sigsFileSHA;
+  fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + SIGS_FILE, {
+    method: 'PUT',
+    headers: {
+      'Authorization': 'Bearer ' + GITHUB_TOKEN,
+      'Accept': 'application/vnd.github+json'
+    },
+    body: JSON.stringify(body)
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    if (data && data.content) {
+      _sigsFileSHA = data.content.sha;
+      console.log('Signatures saved OK, new SHA:', _sigsFileSHA);
+    } else {
+      console.error('Save response error:', JSON.stringify(data).substring(0, 200));
+    }
+  })
+  .catch(function(e) { console.error('saveSigs error', e); });
+}
+
+// ── Reset signatures.json on GitHub (new roster) ──
+function resetSigsOnGitHub(newStorageKey) {
+  var payload = { storageKey: newStorageKey, sigs: {} };
+  var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+  var body = { message: 'Reset signatures for new roster', content: encoded };
+  if (_sigsFileSHA) body.sha = _sigsFileSHA;
+  fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + SIGS_FILE, {
+    method: 'PUT',
+    headers: {
+      'Authorization': 'Bearer ' + GITHUB_TOKEN,
+      'Accept': 'application/vnd.github+json'
+    },
+    body: JSON.stringify(body)
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    if (data && data.content) _sigsFileSHA = data.content.sha;
+  })
+  .catch(function(e) { console.error('resetSigs error', e); });
+}
+
+// ── Roster data ──
+// ── App State ──
+var ROSTER         = { weekLabel:'Loading...', rows:[], officers:[] };
+var MONTHLY_ROSTER = { month:'Loading...', entries:[] };
+var MEMBER_PINS    = {};
+
+var sigs = {}; // loaded from GitHub signatures.json
+var currentKey = null;
+var activeTab = 'type';
+var drawCtx = null;
+var drawActive = false;
+var uploadedImg = null;
+var savedSigs = {}; // stores signature per member name for reuse
+var currentSigner = null; // currently logged-in member
+var pinTarget = null;     // member name being PIN-authenticated
+var pinEntered = '';
+
+// ── Render ──
+function countDay(day) { return ROSTER.rows.filter(r => r.day === day).length; }
+
+function renderRoster() {
+  var body = document.getElementById('roster-body');
+  var html = '';
+  var prevDay = '';
+  var signable = 0, signed = 0;
+  var signerIds = {}, signedIds = {};
+
+  // Pre-calculate rowspans: day spans all rows for that day, time spans rows sharing same time slot
+  var daySpans = {}, timeSpans = {};
+  ROSTER.rows.forEach(function(r, i) {
+    var dk  = r.day;
+    var tmk = r.day + '|' + r.time;
+    if (!daySpans[dk])   { daySpans[dk]   = {first: i, count: 0}; }
+    if (!timeSpans[tmk]) { timeSpans[tmk] = {first: i, count: 0}; }
+    daySpans[dk].count++;
+    timeSpans[tmk].count++;
+  });
+
+  ROSTER.rows.forEach(function(r, i) {
+    var key = 'row_' + i;
+    var sig = sigs[key];
+    var dk  = r.day;
+    var tmk = r.day + '|' + r.time;
+    var isFirstDay  = daySpans[dk].first  === i;
+    var isFirstTime = timeSpans[tmk].first === i;
+    if (r.id && !r.hd) {
+      if (!signerIds[r.id]) { signerIds[r.id] = true; signable++; }
+      if (sig && !signedIds[r.id]) { signedIds[r.id] = true; signed++; }
+    }
+
+    // Date cell spans the ENTIRE day group (same rowspan as Day)
+    var dayCell  = isFirstDay  ? '<td class="day" rowspan="' + daySpans[dk].count  + '">' + r.day  + '</td>' : '';
+    var dateCell = isFirstDay  ? '<td class="muted" rowspan="' + daySpans[dk].count + '">' + r.date + '</td>' : '';
+    var worshipKeywords = ['Worship','Holy Supper','Panata'];
+    var isWorshipTime = ['Wed','Sat','Sun'].indexOf(r.day) !== -1
+      && worshipKeywords.some(function(k){ return r.time.indexOf(k) !== -1; })
+      && r.time.indexOf('Panata') === -1; // Panata stays muted even on worship days
+    var timeClass = isWorshipTime ? 'time' : 'muted';
+    var timeCell = isFirstTime ? '<td class="' + timeClass + '" rowspan="' + timeSpans[tmk].count + '">' + r.time + '</td>' : '';
+    var nameCell = (r.skip || r.hd) ? '<span class="italic">' + r.name + '</span>' : r.name;
+
+    var sigCell = '';
+    if (r.hd) {
+      sigCell = '<span class="greyed">-</span>';
+    } else if (r.skip) {
+      sigCell = '<span class="skip">' + r.skip + '</span>';
+    } else if (sig) {
+      sigCell = renderSig(sig, key);
+    } else {
+      var signerName = currentSigner ? currentSigner.trim().toLowerCase() : '';
+      var rowName = r.name.trim().toLowerCase();
+      var isMyRow = currentSigner && (currentSigner === '__admin__' || rowName === signerName);
+      if (isMyRow) {
+        sigCell = '<button class="sig-btn" onclick="openModal(\'' + key + '\',\'' + r.name + '\',\'' + r.duty + ' - ' + r.date + '\')">Sign</button>';
+      } else {
+        sigCell = '<button class="sig-btn sig-btn-muted" disabled>Sign</button>';
+      }
+    }
+
+    var isWorship = ['Wed','Sat','Sun'].indexOf(r.day) !== -1;
+    html += '<tr class="' + (isFirstDay ? 'day-first' : '') + (isWorship ? ' worship' : '') + '">'
+      + dayCell + dateCell + timeCell
+      + '<td class="muted">' + r.duty + '</td>'
+      + '<td class="name">' + nameCell + '</td>'
+      + '<td>' + sigCell + '</td>'
+      + '</tr>';
+
+    if (isFirstDay) prevDay = r.day;
+  });
+
+
+  body.innerHTML = html;
+
+  // Officers
+  var oHtml = '';
+  ROSTER.officers.forEach(function(o, i) {
+    var key = 'officer_' + i;
+    var sig = sigs[key];
+    if (o.id) {
+      if (!signerIds[o.id]) { signerIds[o.id] = true; signable++; }
+      if (sig && !signedIds[o.id]) { signedIds[o.id] = true; signed++; }
+    }
+    var isMyOfficer = o.id && currentSigner && (currentSigner === '__admin__' || o.name.trim().toLowerCase() === currentSigner.trim().toLowerCase());
+    var sigCell;
+    if (!o.id) {
+      sigCell = '<span class="skip">-</span>';
+    } else if (sig) {
+      sigCell = renderSig(sig, key);
+    } else if (isMyOfficer) {
+      sigCell = '<button class="sig-btn" onclick="openModal(\'' + key + '\',\'' + o.name + '\',\'' + o.role + '\')">Sign</button>';
+    } else {
+      sigCell = '<button class="sig-btn sig-btn-muted" disabled>Sign</button>';
+    }
+    oHtml += '<tr><td class="role muted">' + o.role + '</td><td class="name" style="text-align:center;">' + o.name + '</td><td style="text-align:center;">' + sigCell + '</td></tr>';
+  });
+  document.getElementById('officer-body').innerHTML = oHtml;
+  document.getElementById('officers-card').style.display = 'block';
+
+  document.getElementById('progress-text').textContent = signed + ' / ' + signable + ' signers';
+}
+
+function renderSig(sig, key) {
+  // Only show clear button for admin or the signer who owns this signature
+  var isOwner = currentSigner === '__admin__' ||
+    (sig.memberName && sig.memberName.trim().toLowerCase() === currentSigner.trim().toLowerCase()) ||
+    (sig.type === 'type' && sig.data.trim().toLowerCase() === currentSigner.trim().toLowerCase()) ||
+    (sig.type === 'type' && sig.data.trim().toLowerCase() === currentSignerName.trim().toLowerCase());
+  var clearBtn = isOwner
+    ? '<button class="sig-clear" onclick="clearSig(\'' + key + '\')" title="Clear signature">×</button>'
+    : '';
+  if (sig.type === 'type') {
+    return '<div class="sig-wrap">' + clearBtn + '<div class="sig-done">' + sig.data + '</div></div>';
+  }
+  return '<div class="sig-wrap">' + clearBtn + '<img src="' + sig.data + '" style="height:34px;max-width:130px;object-fit:contain;"></div>';
+}
+
+function clearSig(key) {
+  var sig = sigs[key];
+  if (!sig) return;
+  // Only admin or the owner can clear
+  var isOwner = currentSigner === '__admin__' ||
+    (sig.memberName && sig.memberName.trim().toLowerCase() === currentSigner.trim().toLowerCase()) ||
+    (sig.type === 'type' && sig.data.trim().toLowerCase() === currentSigner.trim().toLowerCase()) ||
+    (sig.type === 'type' && sig.data.trim().toLowerCase() === currentSignerName.trim().toLowerCase());
+  if (!isOwner) { toast('You can only clear your own signature', 'err'); return; }
+  delete sigs[key];
+  saveSigsToGitHub();
+  renderRoster();
+}
+
+// ── Modal ──
+var currentSignerName = '';
+
+function openModal(key, name, ctx) {
+  currentKey = key;
+  currentSignerName = name;
+  document.getElementById('modal-ctx').textContent = ctx;
+  uploadedImg = null;
+  document.getElementById('sig-preview').style.display = 'none';
+
+  // If THIS person has signed before, reuse their signature instantly
+  if (savedSigs[name]) {
+    var ts = new Date().toLocaleString('en-AU', {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+    sigs[key] = { data: savedSigs[name].data, type: savedSigs[name].type, ts: ts, memberName: currentSigner };
+    saveSigsToGitHub();
+    // Check if this was the last box
+    var myKeys2 = [];
+    ROSTER.rows.forEach(function(r,i){
+      if(r.id && !r.hd && !r.skip && r.name.trim().toLowerCase() === currentSigner.trim().toLowerCase())
+        myKeys2.push('row_'+i);
+    });
+    ROSTER.officers.forEach(function(o,i){
+      if(o.id && o.name.trim().toLowerCase() === currentSigner.trim().toLowerCase())
+        myKeys2.push('officer_'+i);
+    });
+    var allNowSigned2 = myKeys2.length > 0 && myKeys2.every(function(k){ return sigs[k]; });
+    if (allNowSigned2) {
+      renderRoster();
+      showConfirmDialog();
+    } else {
+      renderRoster();
+      toast('Signed! ✓', 'ok');
+    }
+    return;
+  }
+
+  // Pre-fill name for e-Sign tab
+  document.getElementById('preview').textContent = name;
+  clearCanvas();
+  tab('type');
+  document.getElementById('modal').classList.add('open');
+  setTimeout(initCanvas, 80);
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+}
+
+function logout() {
+  currentSigner = null; savedSigs = {};
+  document.getElementById('landing').style.display = 'flex';
+  document.getElementById('main-view').style.display = 'none';
+  switchTab('week');
+  document.getElementById('header-controls').style.display = 'none';
+  document.getElementById('admin-toggle-btn').style.display = 'none';
+  document.getElementById('print-btn').style.display = 'none';
+  var calToggleBtn = document.getElementById('cal-toggle-btn');
+  if (calToggleBtn) calToggleBtn.style.display = 'none';
+  document.getElementById('view-tabs').classList.remove('visible');
+  window._currentSignerName = null;
+  document.getElementById('user-label').textContent = '';
+  // Reset admin toggle state
+  var adminBtn = document.getElementById('admin-toggle-btn');
+  adminBtn.textContent = 'Admin';
+  adminBtn.style.background = 'rgba(255,255,255,0.12)';
+  adminBtn.style.border = '1px solid rgba(255,255,255,0.3)';
+  buildLanding();
+}
+
+function tab(t) {
+  activeTab = t;
+  ['type','draw','upload'].forEach(function(name) {
+    document.getElementById('pane-' + name).className = 'pane' + (name === t ? ' on' : '');
+  });
+  document.querySelectorAll('.tab').forEach(function(btn, i) {
+    btn.className = 'tab' + (['type','draw','upload'][i] === t ? ' on' : '');
+  });
+  if (t === 'draw') setTimeout(initCanvas, 80);
+  if (t === 'type') {
+    document.getElementById('preview').textContent = currentSignerName || 'Your signature';
+  }
+}
+
+function initCanvas() {
+  var c = document.getElementById('draw-canvas');
+  var dpr = window.devicePixelRatio || 1;
+  c.width = c.offsetWidth * dpr;
+  c.height = c.offsetHeight * dpr;
+  drawCtx = c.getContext('2d');
+  drawCtx.scale(dpr, dpr);
+  drawCtx.strokeStyle = '#0f1f35';
+  drawCtx.lineWidth = 2;
+  drawCtx.lineCap = 'round';
+  drawCtx.lineJoin = 'round';
+
+  function pos(e) {
+    var r = c.getBoundingClientRect();
+    var src = e.touches ? e.touches[0] : e;
+    return { x: src.clientX - r.left, y: src.clientY - r.top };
+  }
+  c.onmousedown = c.ontouchstart = function(e) {
+    e.preventDefault(); drawActive = true;
+    var p = pos(e); drawCtx.beginPath(); drawCtx.moveTo(p.x, p.y);
+  };
+  c.onmousemove = c.ontouchmove = function(e) {
+    if (!drawActive) return; e.preventDefault();
+    var p = pos(e); drawCtx.lineTo(p.x, p.y); drawCtx.stroke();
+  };
+  c.onmouseup = c.ontouchend = function() { drawActive = false; };
+}
+
+function clearCanvas() {
+  var c = document.getElementById('draw-canvas');
+  if (drawCtx) drawCtx.clearRect(0, 0, c.width, c.height);
+}
+
+function loadImg(input) {
+  var f = input.files[0]; if (!f) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    uploadedImg = e.target.result;
+    var img = document.getElementById('sig-preview');
+    img.src = uploadedImg; img.style.display = 'block';
+  };
+  reader.readAsDataURL(f);
+}
+
+function confirm() {
+  var data = null, type = null;
+  var ts = new Date().toLocaleString('en-AU', {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+
+  if (activeTab === 'type') {
+    // e-Sign: use the signer's actual name
+    var n = currentSignerName.trim();
+    if (!n) { toast('Name not found', 'err'); return; }
+    document.getElementById('preview').textContent = n;
+    data = n; type = 'type';
+  } else if (activeTab === 'draw') {
+    var c = document.getElementById('draw-canvas');
+    var px = c.getContext('2d').getImageData(0, 0, c.width, c.height).data;
+    var hasContent = false;
+    for (var i = 3; i < px.length; i += 4) { if (px[i] > 0) { hasContent = true; break; } }
+    if (!hasContent) { toast('Please draw your signature', 'err'); return; }
+    data = c.toDataURL('image/png'); type = 'draw';
+  } else {
+    if (!uploadedImg) { toast('Please upload an image', 'err'); return; }
+    data = uploadedImg; type = 'upload';
+  }
+
+  // Save this as the reusable signature for this person
+  savedSigs[currentSignerName] = { data: data, type: type };
+
+  // Save signature
+  sigs[currentKey] = { data: data, type: type, ts: ts, memberName: currentSigner };
+  saveSigsToGitHub();
+
+  closeModal();
+
+  // Check if ALL boxes for this user are now signed
+  var myKeys = [];
+  ROSTER.rows.forEach(function(r,i){
+    if(r.id && !r.hd && !r.skip && r.name.trim().toLowerCase() === currentSigner.trim().toLowerCase())
+      myKeys.push('row_'+i);
+  });
+  ROSTER.officers.forEach(function(o,i){
+    if(o.id && o.name.trim().toLowerCase() === currentSigner.trim().toLowerCase())
+      myKeys.push('officer_'+i);
+  });
+  var allNowSigned = myKeys.length > 0 && myKeys.every(function(k){ return sigs[k]; });
+
+  if (allNowSigned) {
+    renderRoster();
+    showConfirmDialog();
+  } else {
+    toast('Signed! ✓', 'ok', 2500);
+    renderRoster();
+  }
+}
+
+function toast(msg, type) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (type ? ' ' + type : '');
+  setTimeout(function() { t.className = 'toast'; }, 3000);
+}
+
+// ── Build member grid ──
+function buildLanding() {
+  // Set week label on landing
+
+  var members = {};
+  // Always show full team, not just those assigned this week
+  var ALL_MEMBERS = (window._members && window._members.length)
+    ? window._members.map(function(m){ return m.fullName; })
+    : ['Jonathan Au','Ronnie Cunanan','Jay Beltran','Karez Bartolo','Dwight Alegros','Adrian Dela Cruz','Jerick Dadios','Choir Leaders'];
+  ALL_MEMBERS.forEach(function(n){ members[n] = true; });
+  ROSTER.officers.forEach(function(o) { if (o.id) members[o.name] = true; });
+
+  var grid = document.getElementById('member-grid');
+  grid.innerHTML = Object.keys(members).map(function(name) {
+    var memberObj = (window._members || []).find(function(m){ return m.fullName === name; });
+    var firstName = memberObj ? memberObj.firstName : (name === 'Choir Leaders' ? 'Choir Leaders' : name.split(' ')[0]);
+    var extraClass = name === 'Choir Leaders' ? ' choir' : '';
+    return '<button class="member-btn' + extraClass + '" onclick="selectMember(\'' + name.replace(/'/g, "\\'") + '\')">'
+      + firstName + '</button>';
+  }).join('');
+}
+
+function selectMember(name) {
+  pinTarget = name;
+  pinEntered = '';
+  document.getElementById('pin-member-name').textContent = name;
+  document.getElementById('pin-error').textContent = '';
+  renderPinDots();
+  buildPinGrid();
+  document.getElementById('pin-pad').classList.add('open');
+}
+
+function closePinPad() {
+  pinTarget = null; pinEntered = '';
+  document.getElementById('pin-pad').classList.remove('open');
+}
+
+function renderPinDots() {
+  var dots = document.getElementById('pin-dots').querySelectorAll('.pin-dot');
+  dots.forEach(function(d,i){ d.classList.toggle('filled', i < pinEntered.length); });
+  // auto-check at 6 digits handled by keypress
+}
+
+function buildPinGrid() {
+  var grid = document.getElementById('pin-grid');
+  grid.innerHTML = '';
+  [1,2,3,4,5,6,7,8,9,'',0,'DEL'].forEach(function(k) {
+    var btn = document.createElement('button');
+    btn.className = 'pin-key' + (k==='DEL'?' del':'');
+    btn.textContent = k === 'DEL' ? '⌫' : k;
+    if (k !== '') {
+      btn.onclick = function() {
+        if (k === 'DEL') { pinEntered = pinEntered.slice(0,-1); }
+        else if (pinEntered.length < 6) { pinEntered += k; }
+        renderPinDots();
+        if (pinEntered.length === 6) { checkPin(); }
+      };
+    }
+    grid.appendChild(btn);
+  });
+}
+
+function checkPin() {
+  var correct = MEMBER_PINS[pinTarget] || null;
+  // Also derive PIN from last 6 digits of phone number
+  var memberObj = (window._members || []).find(function(m){ return m.fullName === pinTarget; });
+  var phonePIN = null;
+  if (memberObj && memberObj.phone) {
+    var digits = memberObj.phone.replace(/\D/g,'');
+    if (digits.length >= 6) phonePIN = digits.slice(-6);
+  }
+  if (!correct && !phonePIN) {
+    document.getElementById('pin-error').textContent = 'No PIN set for this member.';
+    pinEntered = ''; renderPinDots(); return;
+  }
+  if (pinEntered === correct || pinEntered === phonePIN) {
+    var verifiedTarget = pinTarget; // save before closePinPad resets pinTarget
+    closePinPad();
+    currentSigner = verifiedTarget; // always log in as self first
+    document.getElementById('landing').style.display = 'none';
+    document.getElementById('main-view').style.display = 'block';
+    var wl = document.getElementById('week-label');
+    if (wl) wl.textContent = 'TSV Suguan: ' + ROSTER.weekLabel;
+    // Choir Leaders: render roster for view-only, then default to This Month tab
+    renderRoster();
+    if (currentSigner === 'Choir Leaders') {
+      switchTab('month');
+    }
+    // Check if already fully signed or has no duties
+    if (currentSigner !== '__admin__' && currentSigner !== 'Choir Leaders') {
+      var myKeys = [];
+      ROSTER.rows.forEach(function(r,i){ if(r.id && !r.hd && !r.skip && r.name.trim().toLowerCase() === currentSigner.trim().toLowerCase()) myKeys.push('row_'+i); });
+      ROSTER.officers.forEach(function(o,i){ if(o.id && o.name.trim().toLowerCase() === currentSigner.trim().toLowerCase()) myKeys.push('officer_'+i); });
+      if (myKeys.length === 0) {
+        // No duties this week
+        setTimeout(function(){ showNoDutiesPopup(); }, 300);
+      } else if (myKeys.every(function(k){ return sigs[k]; })) {
+        // Already fully signed
+        setTimeout(function(){ showAlreadySignedPopup(); }, 300);
+      }
+    }
+    // end non-admin/non-choir check
+    // Show logout in header
+    window._currentSignerName = verifiedTarget;
+    document.getElementById('user-label').textContent = verifiedTarget;
+    document.getElementById('header-controls').style.display = 'flex';
+    document.getElementById('view-tabs').classList.add('visible');
+    // Show admin toggle for admin-level members
+    var isAdminMember = window._adminMembers && window._adminMembers[verifiedTarget];
+    var adminBtn = document.getElementById('admin-toggle-btn');
+    if (isAdminMember) {
+      adminBtn.style.display = 'inline-flex';
+      adminBtn.textContent = 'Admin';
+      adminBtn.style.background = 'rgba(255,255,255,0.12)';
+      adminBtn.style.border = '1px solid rgba(255,255,255,0.3)';
+    } else {
+      adminBtn.style.display = 'none';
+    }
+  } else {
+    document.getElementById('pin-error').textContent = 'Wrong PIN. Try again.';
+    pinEntered = ''; renderPinDots();
+  }
+}
+
+function showNoDutiesPopup() {
+  document.getElementById('no-duties-popup').classList.add('open');
+}
+function closeNoDutiesPopup() {
+  document.getElementById('no-duties-popup').classList.remove('open');
+}
+
+function showAlreadySignedPopup() {
+  document.getElementById('already-signed-popup').classList.add('open');
+}
+
+function closeAlreadySignedPopup() {
+  document.getElementById('already-signed-popup').classList.remove('open');
+}
+
+function showConfirmDialog() {
+  renderRoster(); // show current state first
+  document.getElementById('confirm-dialog').classList.add('open');
+}
+
+function confirmAllSigs() {
+  document.getElementById('confirm-dialog').classList.remove('open');
+  toast('Thank you! Your signatures have been submitted. ✓', 'ok', 4000);
+  buildLanding(); // refresh landing signed status
+  // Stay on roster page so they can see their signed entries
+}
+
+function cancelAllSigs() {
+  // Clear all signatures for this user and go back
+  document.getElementById('confirm-dialog').classList.remove('open');
+  ROSTER.rows.forEach(function(r,i){
+    if(r.id && !r.hd && r.name.trim().toLowerCase() === currentSigner.trim().toLowerCase()){
+      delete sigs['row_'+i];
+    }
+  });
+  ROSTER.officers.forEach(function(o,i){
+    if(o.id && o.name.trim().toLowerCase() === currentSigner.trim().toLowerCase()){
+      delete sigs['officer_'+i];
+    }
+  });
+  savedSigs = {};
+  saveSigsToGitHub();
+  renderRoster();
+  toast('Signatures cleared. You can sign again.', '', 3000);
+}
+
+// ── Monthly Calendar Data (updated when monthly roster uploaded) ──
+
+
+function printRoster() {
+  switchTab('week');
+  setTimeout(function(){ window.print(); }, 150);
+}
+
+function toggleAdminMode() {
+  var btn = document.getElementById('admin-toggle-btn');
+  var printBtn = document.getElementById('print-btn');
+  if (currentSigner === '__admin__') {
+    // Switch to signer mode
+    currentSigner = window._currentSignerName || document.getElementById('user-label').textContent;
+    btn.textContent = 'Admin';
+    btn.style.background = 'rgba(255,255,255,0.12)';
+    btn.style.border = '1px solid rgba(255,255,255,0.3)';
+    printBtn.style.display = 'none';
+  } else {
+    // Switch to admin mode
+    currentSigner = '__admin__';
+    btn.textContent = '✓ Admin';
+    btn.style.background = 'rgba(99,190,123,0.3)';
+    btn.style.border = '1px solid rgba(99,190,123,0.6)';
+    printBtn.style.display = 'inline-flex';
+  }
+  savedSigs = {};
+  renderRoster();
+}
+
+function renderDirectory() {
+  var wrap = document.getElementById('dir-wrap');
+  if (!wrap) return;
+  var dir = window._directory || {};
+  var groups = Object.keys(dir);
+  if (!groups.length) { wrap.innerHTML = '<p style="text-align:center;color:#6b7280;padding:16px;">No directory data</p>'; return; }
+
+  var html = '';
+  groups.forEach(function(group) {
+    var mList = dir[group];
+    if (!mList || !mList.length) return;
+    html += '<table style="width:100%;border-collapse:collapse;font-size:13px;">'
+      + '<thead><tr style="background:#3d5068;">'
+      + '<th style="padding:10px 14px;text-align:center;font-weight:600;color:#fff;font-size:11px;letter-spacing:0.05em;text-transform:uppercase;">'+group+'</th>'
+      + '<th style="padding:10px 14px;text-align:center;font-weight:600;color:#fff;font-size:11px;letter-spacing:0.05em;text-transform:uppercase;">Contact Number</th>'
+      + '<th style="padding:10px 14px;text-align:center;font-weight:600;color:#fff;font-size:11px;letter-spacing:0.05em;text-transform:uppercase;">Email</th>'
+      + '</tr></thead><tbody>';
+    mList.forEach(function(m, i) {
+      var bg = i%2===0 ? '#fff' : '#f8fafc';
+      html += '<tr class="dir-row" style="background:'+bg+';">'
+        +'<td style="padding:10px 14px;border-bottom:1px solid #e2e4e8;color:#0f1f35;">'+m.fullName+'</td>'
+        +'<td style="padding:10px 14px;border-bottom:1px solid #e2e4e8;text-align:center;color:#6b7280;">'+(m.phone||'—')+'</td>'
+        +'<td style="padding:10px 14px;border-bottom:1px solid #e2e4e8;text-align:center;">'
+        +(m.email ? '<a href="mailto:'+m.email+'" style="color:#2563a8;text-decoration:none;">'+m.email+'</a>' : '—')
+        +'</td></tr>';
+    });
+    html += '</tbody></table>';
+  });
+  wrap.innerHTML = html;
+}
+
+function renderOnLeave() {
+  var onLeave = (window._onLeave || []).filter(function(l){
+    return l.name && l.name.toUpperCase() !== 'NONE' && l.name.trim() !== '';
+  });
+  var card = document.getElementById('on-leave-card');
+  var body = document.getElementById('on-leave-body');
+  if (!card || !body) return;
+  if (!onLeave.length) { card.style.display = 'none'; return; }
+  card.style.display = 'block';
+  body.innerHTML = onLeave.map(function(l, i) {
+    var bg = i % 2 === 0 ? '#fff' : '#f8fafc';
+    return '<tr style="background:'+bg+';">'
+      + '<td style="padding:8px 14px;border-bottom:1px solid #e2e4e8;color:#0f1f35;font-weight:500;">' + l.name + '</td>'
+      + '<td style="padding:8px 14px;border-bottom:1px solid #e2e4e8;text-align:center;color:#6b7280;">' + l.from + '</td>'
+      + '<td style="padding:8px 14px;border-bottom:1px solid #e2e4e8;text-align:center;color:#6b7280;">' + l.to + '</td>'
+      + '</tr>';
+  }).join('');
+}
+
+function switchTab(tab) {
+  var weekCard  = document.querySelector('#main-view > .card');
+  var officers  = document.getElementById('officers-card');
+  var calView   = document.getElementById('calendar-view');
+  var dirView   = document.getElementById('directory-view');
+  document.getElementById('tab-week').classList.toggle('active', tab === 'week');
+  document.getElementById('tab-month').classList.toggle('active', tab === 'month');
+  document.getElementById('tab-directory').classList.toggle('active', tab === 'directory');
+  var wl = document.getElementById('week-label');
+  // Hide all panels first
+  if (weekCard) weekCard.style.display = 'none';
+  if (officers) officers.style.display = 'none';
+  calView.style.display = 'none';
+  dirView.style.display = 'none';
+  var olCard = document.getElementById('on-leave-card');
+  if (olCard) olCard.style.display = 'none';
+  if (tab === 'week') {
+    if (weekCard) weekCard.style.display = '';
+    if (officers) officers.style.display = '';
+    if (wl) wl.textContent = 'TSV Suguan: ' + ROSTER.weekLabel;
+    // Show print only on This Week tab when in admin mode
+    if (currentSigner === '__admin__') document.getElementById('print-btn').style.display = 'inline-flex';
+  } else if (tab === 'month') {
+    renderCalendar();
+    renderOnLeave();
+    calView.style.display = 'block';
+    if (wl) wl.textContent = 'TSV Suguan: ' + MONTHLY_ROSTER.month;
+    document.getElementById('print-btn').style.display = 'none';
+  } else if (tab === 'directory') {
+    renderDirectory();
+    dirView.style.display = 'block';
+    if (wl) wl.textContent = 'TSV Suguan: ' + ROSTER.weekLabel;
+    document.getElementById('print-btn').style.display = 'none';
+  }
+}
+
+function renderCalendar() {
+  var m = MONTHLY_ROSTER;
+  document.getElementById('cal-month-label').textContent = m.month;
+
+  var days = ['MON','TUE','WED','THU','FRI','SAT','SUN'];
+  var html = '<thead><tr>' + days.map(function(d){ return '<th>' + d + '</th>'; }).join('') + '</tr></thead><tbody>';
+
+  // Derive start/end dates from entries
+  var allDates = m.entries.map(function(e) { return new Date(2000 + Math.floor((e.month < 0 ? e.month + 12 : e.month) / 1) , e.month, e.date); });
+  // Better: build from actual year embedded in month data
+  // entries have month (0-based) and date — find min and max dates
+  // Use current year context: if month >= 11 (Dec) assume previous year
+  var now = new Date();
+  var refYear = now.getFullYear();
+  function entryDate(e) {
+    // month 11 = Dec, likely previous year if current month is Jan+
+    var yr = refYear;
+    if (e.month === 11 && now.getMonth() < 6) yr = refYear - 1;
+    else if (e.month > now.getMonth() + 3) yr = refYear - 1;
+    return new Date(yr, e.month, e.date);
+  }
+  var entryDates = m.entries.map(entryDate);
+  var minDate = entryDates.reduce(function(a,b){ return a<b?a:b; });
+  var maxDate = entryDates.reduce(function(a,b){ return a>b?a:b; });
+
+  // Snap startDate back to Monday of that week
+  var startDate = new Date(minDate);
+  var dow = startDate.getDay();
+  var daysBack = (dow === 0) ? 6 : dow - 1;
+  startDate.setDate(startDate.getDate() - daysBack);
+  var endDate = new Date(maxDate);
+
+  // Build lookup: "month-date" -> {am:[], pm:[]}
+  var lookup = {};
+  m.entries.forEach(function(e) {
+    var dt = entryDate(e);
+    var key = dt.getFullYear() + '-' + dt.getMonth() + '-' + dt.getDate();
+    if (!lookup[key]) lookup[key] = { am:[], pm:[] };
+    var t = e.time.toLowerCase();
+    var isAM = t.indexOf('am') !== -1 || t.indexOf('6:30') !== -1;
+    if (isAM) lookup[key].am.push(e);
+    else lookup[key].pm.push(e);
+  });
+
+  var WORSHIP = [3,6,0]; // Wed, Sat, Sun (getDay)
+
+  // Build weeks: array of 7-day arrays
+  var weeks = [];
+  var current = new Date(startDate);
+  while (current <= endDate) {
+    var week = [];
+    for (var d = 0; d < 7; d++) {
+      week.push(new Date(current));
+      current.setDate(current.getDate() + 1);
+    }
+    weeks.push(week);
+  }
+
+  function renderEntry(entries) {
+    if (!entries || !entries.length) return '';
+    return entries.map(function(e) {
+      var t = e.time.toLowerCase();
+      var isAM = t.indexOf('am') !== -1;
+      var timeClass = isAM ? 'am' : 'pm';
+      // Split names: last one is always the AV Monitor/monitor line
+      var names = e.names;
+      var mains = [], monitor = null;
+      names.forEach(function(n) {
+        var nl = n.toLowerCase();
+        if (nl === 'hd reserve' || nl.indexOf('monitor') !== -1) {
+          monitor = n;
+        } else {
+          mains.push(n);
+        }
+      });
+      // If last name is not HD Reserve but entry has 3 names, last = AV monitor person
+      if (!monitor && names.length === 3) {
+        monitor = mains.pop();
+      }
+      return '<span class="cal-time ' + timeClass + '">' + e.time + '</span>'
+        + '<span class="cal-name-line">' + mains.join(' / ') + '</span>'
+        + (monitor ? '<span class="cal-monitor">' + monitor + '</span>' : '');
+    }).join('');
+  }
+
+  weeks.forEach(function(week) {
+    // Row 1: day numbers
+    html += '<tr class="cal-row-dates">';
+    week.forEach(function(date) {
+      if (!date) { html += '<td class="cal-empty-cell"></td>'; return; }
+      var isW = WORSHIP.indexOf(date.getDay()) !== -1;
+      html += '<td class="' + (isW ? 'cal-worship-date' : '') + '"><span class="cal-day-num">' + date.getDate() + '</span></td>';
+    });
+    html += '</tr>';
+
+    // Row 2: AM row (yellow bg)
+    html += '<tr class="cal-row-am">';
+    week.forEach(function(date) {
+      if (!date) { html += '<td class="cal-empty-cell"></td>'; return; }
+      var key = date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate();
+      var amEntries = lookup[key] ? lookup[key].am : [];
+      var isWorship = WORSHIP.indexOf(date.getDay()) !== -1;
+      html += '<td class="' + (isWorship ? 'cal-worship-am' : '') + '">' + renderEntry(amEntries) + '</td>';
+    });
+    html += '</tr>';
+
+    // Row 3: PM row
+    html += '<tr class="cal-row-pm">';
+    week.forEach(function(date) {
+      if (!date) { html += '<td class="cal-empty-cell"></td>'; return; }
+      var key = date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate();
+      var pmEntries = lookup[key] ? lookup[key].pm : [];
+      var isWorship = WORSHIP.indexOf(date.getDay()) !== -1;
+      html += '<td class="' + (isWorship ? 'cal-worship-pm' : '') + '">' + renderEntry(pmEntries) + '</td>';
+    });
+    html += '</tr>';
+  });
+
+  html += '</tbody>';
+  document.getElementById('cal-table').innerHTML = html;
+}
+
+// ── Inline roster data (for local testing; replace with fetch for GitHub) ──
+(function() {
+  var d = {"rosterType": "T1R", "monthType": "T2M", "roster": {"weekLabel": "Mar 30 to Apr 05, 2026", "storageKey": "tsv_sigs_mar30toapr052026_5jl1dh", "rows": [{"day": "Mon", "date": "30 Mar 2026", "time": "PM - Any Activity", "duty": "TSV Admin", "name": "Ronnie Cunanan", "id": "ronnie-cunanan"}, {"day": "Tue", "date": "31 Mar 2026", "time": "PM - Any Activity", "duty": "TSV Admin", "name": "Jay Beltran", "id": "jay-beltran"}, {"day": "Wed", "date": "01 Apr 2026", "time": "6:30 AM - Worship Service", "duty": "TSV Admin", "name": "Dwight Alegros", "id": "dwight-alegros"}, {"day": "Wed", "date": "01 Apr 2026", "time": "6:30 AM - Worship Service", "duty": "HVO", "name": "TBA", "id": null, "skip": "Assigned by Choir Leaders"}, {"day": "Wed", "date": "01 Apr 2026", "time": "6:30 AM - Worship Service", "duty": "AV Monitor", "name": "HD Reserve", "id": null, "skip": "Not Applicable"}, {"day": "Wed", "date": "01 Apr 2026", "time": "8:00 PM  - Worship Service", "duty": "TSV Admin", "name": "Jay Beltran", "id": "jay-beltran"}, {"day": "Wed", "date": "01 Apr 2026", "time": "8:00 PM  - Worship Service", "duty": "HVO", "name": "TBA", "id": null, "skip": "Assigned by Choir Leaders"}, {"day": "Wed", "date": "01 Apr 2026", "time": "8:00 PM  - Worship Service", "duty": "AV Monitor", "name": "Ronnie Cunanan", "id": "ronnie-cunanan"}, {"day": "Thu", "date": "02 Apr 2026", "time": "PM - Any Activity", "duty": "TSV Admin", "name": "Adrian Dela Cruz", "id": "adrian-dela-cruz"}, {"day": "Fri", "date": "03 Apr 2026", "time": "PM - Any Activity", "duty": "TSV Admin", "name": "Jonathan Au", "id": "jonathan-au"}, {"day": "Sat", "date": "04 Apr 2026", "time": "6:00 PM - Worship Service", "duty": "TSV Admin", "name": "Jay Beltran", "id": "jay-beltran"}, {"day": "Sat", "date": "04 Apr 2026", "time": "6:00 PM - Worship Service", "duty": "HVO", "name": "TBA", "id": null, "skip": "Assigned by Choir Leaders"}, {"day": "Sat", "date": "04 Apr 2026", "time": "6:00 PM - Worship Service", "duty": "AV Monitor", "name": "Ronnie Cunanan", "id": "ronnie-cunanan"}, {"day": "Sun", "date": "05 Apr 2026", "time": "8:00 AM - Worship Service", "duty": "TSV Admin", "name": "Dwight Alegros", "id": "dwight-alegros"}, {"day": "Sun", "date": "05 Apr 2026", "time": "8:00 AM - Worship Service", "duty": "HVO", "name": "TBA", "id": null, "skip": "Assigned by Choir Leaders"}, {"day": "Sun", "date": "05 Apr 2026", "time": "8:00 AM - Worship Service", "duty": "AV Monitor", "name": "HD Reserve", "id": null, "skip": "Not Applicable"}], "officers": [{"role": "Coordinating Head Deacon", "name": "Jonathan Au", "id": "jonathan-au"}, {"role": "Resident Minister", "name": "Karl Alvarez", "id": null}]}, "monthly": {"month": "Mar 30 to May 03, 2026", "monthType": "T2M", "entries": [{"date": 30, "month": 2, "day": "Mon", "time": "Any Activity", "names": ["Ronnie"]}, {"date": 31, "month": 2, "day": "Tue", "time": "Any Activity", "names": ["Jay"]}, {"date": 1, "month": 3, "day": "Wed", "time": "6:30 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 1, "month": 3, "day": "Wed", "time": "8:00 PM", "names": ["Jay", "TBA", "HD Reserve"]}, {"date": 2, "month": 3, "day": "Thu", "time": "Any Activity", "names": ["Adrian"]}, {"date": 3, "month": 3, "day": "Fri", "time": "Any Activity", "names": ["Jonathan"]}, {"date": 4, "month": 3, "day": "Sat", "time": "6:00 PM", "names": ["Jay", "TBA", "Ronnie"]}, {"date": 5, "month": 3, "day": "Sun", "time": "8:00 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 6, "month": 3, "day": "Mon", "time": "Any Activity", "names": ["Ronnie"]}, {"date": 7, "month": 3, "day": "Tue", "time": "Any Activity", "names": ["Jay"]}, {"date": 8, "month": 3, "day": "Wed", "time": "6:30 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 8, "month": 3, "day": "Wed", "time": "8:00 PM", "names": ["Jay", "TBA", "HD Reserve"]}, {"date": 9, "month": 3, "day": "Thu", "time": "Any Activity", "names": ["Dwight"]}, {"date": 10, "month": 3, "day": "Fri", "time": "Any Activity", "names": ["Jonathan"]}, {"date": 11, "month": 3, "day": "Sat", "time": "6:00 PM", "names": ["Karez", "TBA", "Ronnie"]}, {"date": 12, "month": 3, "day": "Sun", "time": "8:00 AM", "names": ["Jay", "TBA", "Dwight"]}, {"date": 13, "month": 3, "day": "Mon", "time": "Any Activity", "names": ["Ronnie"]}, {"date": 14, "month": 3, "day": "Tue", "time": "Any Activity", "names": ["Jay"]}, {"date": 15, "month": 3, "day": "Wed", "time": "6:30 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 15, "month": 3, "day": "Wed", "time": "8:00 PM", "names": ["Jay", "TBA", "HD Reserve"]}, {"date": 16, "month": 3, "day": "Thu", "time": "Any Activity", "names": ["Adrian"]}, {"date": 17, "month": 3, "day": "Fri", "time": "Any Activity", "names": ["Jonathan"]}, {"date": 18, "month": 3, "day": "Sat", "time": "6:00 PM", "names": ["Jay", "TBA", "Ronnie"]}, {"date": 19, "month": 3, "day": "Sun", "time": "8:00 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 20, "month": 3, "day": "Mon", "time": "Any Activity", "names": ["Ronnie"]}, {"date": 21, "month": 3, "day": "Tue", "time": "Any Activity", "names": ["Jay"]}, {"date": 22, "month": 3, "day": "Wed", "time": "6:30 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 22, "month": 3, "day": "Wed", "time": "8:00 PM", "names": ["Jay", "TBA", "HD Reserve"]}, {"date": 23, "month": 3, "day": "Thu", "time": "Any Activity", "names": ["Dwight"]}, {"date": 24, "month": 3, "day": "Fri", "time": "Any Activity", "names": ["Jonathan"]}, {"date": 25, "month": 3, "day": "Sat", "time": "6:00 PM", "names": ["Karez", "TBA", "Ronnie"]}, {"date": 26, "month": 3, "day": "Sun", "time": "8:00 AM", "names": ["Jay", "TBA", "Dwight"]}, {"date": 27, "month": 3, "day": "Mon", "time": "Any Activity", "names": ["Ronnie"]}, {"date": 28, "month": 3, "day": "Tue", "time": "Any Activity", "names": ["Jay"]}, {"date": 29, "month": 3, "day": "Wed", "time": "6:30 AM", "names": ["Dwight", "TBA", "HD Reserve"]}, {"date": 29, "month": 3, "day": "Wed", "time": "8:00 PM", "names": ["Jay", "TBA", "HD Reserve"]}, {"date": 30, "month": 3, "day": "Thu", "time": "Any Activity", "names": ["Adrian"]}, {"date": 1, "month": 4, "day": "Fri", "time": "Any Activity", "names": ["Jonathan"]}, {"date": 2, "month": 4, "day": "Sat", "time": "6:00 PM", "names": ["Jay", "TBA", "Ronnie"]}, {"date": 3, "month": 4, "day": "Sun", "time": "8:00 AM", "names": ["Dwight", "TBA", "HD Reserve"]}]}, "members": [{"fullName": "Jonathan Au", "firstName": "Jonathan", "id": "jonathan-au", "phone": "0420 721 244", "email": "than.au@hotmail.com", "cat": "TSV", "user": "Signer"}, {"fullName": "Ronnie Cunanan", "firstName": "Ronnie", "id": "ronnie-cunanan", "phone": "0400 387 866", "email": "rbcunanan@yahoo.com", "cat": "TSV", "user": "Signer"}, {"fullName": "Jay Beltran", "firstName": "Jay", "id": "jay-beltran", "phone": "0418 119 551", "email": "jay.beltranism@gmail.com", "cat": "TSV", "user": "Admin"}, {"fullName": "Karez Bartolo", "firstName": "Karez", "id": "karez-bartolo", "phone": "0415 232 985", "email": "karez_dana@hotmail.com", "cat": "TSV", "user": "Signer"}, {"fullName": "Dwight Alegros", "firstName": "Dwight", "id": "dwight-alegros", "phone": "0432 879 419", "email": "dsualegros@gmail.com", "cat": "TSV", "user": "Signer"}, {"fullName": "Adrian Dela Cruz", "firstName": "Adrian", "id": "adrian-dela-cruz", "phone": "0426 728 722", "email": "delacruz.s.adrian@gmail.com", "cat": "CHOIR TSV", "user": "Signer"}, {"fullName": "Jerick Dadios", "firstName": "Jerick", "id": "jerick-dadios", "phone": "0400 608 012", "email": "jerick.dadios@gmail.com", "cat": "CHOIR TSV", "user": "Signer"}, {"fullName": "Choir Leaders", "firstName": "Choir Leaders", "id": "choir-leaders", "phone": null, "email": null, "cat": "CHOIR TSV", "user": null}], "pins": {"Jonathan Au": "111111", "Ronnie Cunanan": "222222", "Jay Beltran": "333333", "Karez Bartolo": "444444", "Dwight Alegros": "555555", "Adrian Dela Cruz": "666666", "Jerick Dadios": "777777", "Choir Leaders": "888888"}, "onLeave": []};
+  (function(d) {
+    // Normalize date formats in rows (e.g. "2-Mar-26" → "02 Mar 2026")
+    var months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+    function normalizeDate(s) {
+      if (!s) return s;
+      // "2-Mar-26" or "6-Mar-26" format
+      var m1 = s.match(/^(\d{1,2})-([A-Za-z]{3})-(\d{2})$/);
+      if (m1) {
+        var yr = parseInt(m1[3]) + 2000;
+        return String(m1[1]).padStart(2,'0') + ' ' + m1[2].charAt(0).toUpperCase() + m1[2].slice(1,3).toLowerCase() + ' ' + yr;
+      }
+      // "6 Mar 2026" (missing leading zero)
+      var m2 = s.match(/^(\d{1,2}) ([A-Za-z]{3}) (\d{4})$/);
+      if (m2) return String(m2[1]).padStart(2,'0') + ' ' + m2[2] + ' ' + m2[3];
+      return s;
+    }
+    d.roster.rows.forEach(function(r){ r.date = normalizeDate(r.date); });
+
+    // Weekly roster
+    ROSTER.weekLabel = d.roster.weekLabel;
+    ROSTER.rows      = d.roster.rows;
+    ROSTER.officers  = d.roster.officers;
+
+    // Storage key per week
+    window._storageKey = d.roster.storageKey;
+
+    // Monthly roster
+    MONTHLY_ROSTER.month   = d.monthly.month;
+    MONTHLY_ROSTER.entries = d.monthly.entries;
+
+    // Pins
+    MEMBER_PINS = d.pins || {};
+
+    // Members order for landing page
+    window._members = d.members || [];
+    window._directory = {};
+    (d.members||[]).forEach(function(m){
+      if (!m.cat || !m.firstName || m.fullName === 'Choir Leaders') return;
+      if (!window._directory[m.cat]) window._directory[m.cat] = [];
+      window._directory[m.cat].push(m);
+    });
+    window._adminMembers = {};
+    (d.members||[]).forEach(function(m){
+      if (m.user && m.user.toLowerCase()==='admin') window._adminMembers[m.fullName]=true;
+    });
+    window._onLeave = d.onLeave || [];
+
+    // Build landing immediately so name buttons appear
+    buildLanding();
+
+    // Fetch signatures from GitHub and check if roster has changed
+    fetchSigsFromGitHub(function(data) {
+      if (data && data.storageKey && data.storageKey !== window._storageKey) {
+        sigs = {};
+        savedSigs = {};
+        resetSigsOnGitHub(window._storageKey);
+      } else if (data && data.sigs) {
+        sigs = data.sigs;
+      } else {
+        sigs = {};
+      }
+      // Re-render to show restored signatures on landing signed status
+      buildLanding();
+    });
+  })(d);
+})();
+</script>
+  <!-- ── CALENDAR VIEW ── -->
+  <div id="calendar-view" style="display:none;padding:0 0 4px;">
+    <div class="card">
+      <div class="card-head" style="justify-content:space-between;">
+        <span id="cal-month-label" style="font-size:13px;font-weight:600;"></span>
+        <button onclick="switchTab('week')" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:4px 10px;font-size:11px;cursor:pointer;font-family:Inter,sans-serif;">&#8592; This Week</button>
+      </div>
+      <div style="overflow-x:auto;padding:12px;">
+        <div style="border:1px solid #d0d4da;border-radius:6px;overflow:hidden;">
+          <table id="cal-table"></table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ON LEAVE CARD ── -->
+  <div id="on-leave-card" style="display:none;padding:0;max-width:900px;margin:4px auto 0;">
+    <div class="card" style="margin-bottom:0;">
+      <div class="card-head" style="justify-content:flex-start;">
+        <span style="font-size:12px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;">On Leave</span>
+      </div>
+      <div style="padding:12px 16px;">
+        <table style="width:100%;border-collapse:collapse;font-size:13px;">
+          <thead>
+            <tr style="background:#e8ecf2;">
+              <th style="padding:8px 14px;text-align:left;font-weight:600;color:#fff;border-bottom:1px solid #d0d4da;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;background:#3d5068;">Name</th>
+              <th style="padding:8px 14px;text-align:center;font-weight:600;color:#fff;border-bottom:1px solid #d0d4da;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;background:#3d5068;">From</th>
+              <th style="padding:8px 14px;text-align:center;font-weight:600;color:#fff;border-bottom:1px solid #d0d4da;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;background:#3d5068;">To</th>
+            </tr>
+          </thead>
+          <tbody id="on-leave-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TSV DIRECTORY ── -->
+  <div id="directory-view" style="display:none;">
+    <div class="card">
+      <div class="card-head" style="justify-content:flex-start;">
+        <span style="font-size:13px;font-weight:600;">TSV Directory</span>
+      </div>
+      <div style="padding:16px;">
+        <div style="border:1px solid #d0d4da;border-radius:8px;overflow:hidden;">
+          <div id="dir-wrap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /main-view -->
+
+<!-- ── FINAL CONFIRM DIALOG ── -->
+<div class="pin-backdrop" id="confirm-dialog" style="z-index:300;">
+  <div class="pin-box" style="max-width:340px;">
+    <div style="font-size:32px;margin-bottom:12px;">✅</div>
+    <h3 style="margin-bottom:8px;">All duties signed!</h3>
+    <p style="font-size:13px;color:#6b7280;margin-bottom:24px;line-height:1.6;">
+      You have signed all your assigned duties.<br>Confirm to submit or cancel to go back.
+    </p>
+    <div style="display:flex;gap:10px;">
+      <button onclick="cancelAllSigs()" style="flex:1;padding:11px;border:1.5px solid #e2e4e8;border-radius:8px;background:#fff;font-family:Inter,sans-serif;font-size:13px;font-weight:500;cursor:pointer;color:#0f1f35;">Cancel</button>
+      <button onclick="confirmAllSigs()" style="flex:1;padding:11px;border:none;border-radius:8px;background:#16a34a;color:#fff;font-family:Inter,sans-serif;font-size:13px;font-weight:600;cursor:pointer;">OK</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── NO DUTIES POPUP ── -->
+<div class="pin-backdrop" id="no-duties-popup" style="z-index:400;">
+  <div class="pin-box" style="max-width:320px;">
+    <div style="font-size:40px;margin-bottom:12px;">📋</div>
+    <h3 style="margin-bottom:10px;font-size:17px;">No duties assigned</h3>
+    <p style="font-size:13px;color:#6b7280;margin-bottom:24px;line-height:1.6;">
+      You have no assigned duties for this week.
+    </p>
+    <button onclick="closeNoDutiesPopup()" style="width:100%;padding:12px;border:none;border-radius:8px;background:#0f1f35;color:#fff;font-family:Inter,sans-serif;font-size:14px;font-weight:600;cursor:pointer;">OK</button>
+  </div>
+</div>
+
+<!-- ── ALREADY SIGNED POPUP ── -->
+<div class="pin-backdrop" id="already-signed-popup" style="z-index:400;">
+  <div class="pin-box" style="max-width:320px;">
+    <div style="font-size:40px;margin-bottom:12px;">✅</div>
+    <h3 style="margin-bottom:10px;font-size:17px;">You have completed your signatures!</h3>
+    <p style="font-size:13px;color:#6b7280;margin-bottom:24px;line-height:1.6;">
+      All your duties for this week have been signed.
+    </p>
+    <button onclick="closeAlreadySignedPopup()" style="width:100%;padding:12px;border:none;border-radius:8px;background:#0f1f35;color:#fff;font-family:Inter,sans-serif;font-size:14px;font-weight:600;cursor:pointer;">OK</button>
+  </div>
+</div>
+
+<!-- ── PIN PAD ── -->
+<div class="pin-backdrop" id="pin-pad">
+  <div class="pin-box">
+    <h3>Enter your PIN</h3>
+    <div class="pin-name" id="pin-member-name"></div>
+    <div class="pin-dots" id="pin-dots">
+      <div class="pin-dot"></div><div class="pin-dot"></div>
+      <div class="pin-dot"></div><div class="pin-dot"></div>
+      <div class="pin-dot"></div><div class="pin-dot"></div>
+    </div>
+    <div class="pin-grid" id="pin-grid"></div>
+    <div class="pin-error" id="pin-error"></div>
+    <div style="margin-top:8px;"><span class="pin-cancel" onclick="closePinPad()">Cancel</span></div>
+  </div>
+</div>
+</body>
+</html>
