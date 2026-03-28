@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Mar 30 to Apr 05, 2026",
-    "storageKey": "tsv_sigs_mar30toapr052026_5jl1dh",
+    "storageKey": "tsv_sigs_mar30toapr052026_20260329020734",
     "rows": [
       {
         "day": "Mon",
@@ -24,7 +24,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "6:30 AM - Worship Service",
+        "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
@@ -32,7 +32,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "6:30 AM - Worship Service",
+        "time": "6:30 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
@@ -41,7 +41,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "6:30 AM - Worship Service",
+        "time": "6:30 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
         "id": null,
@@ -50,7 +50,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "8:00 PM  - Worship Service",
+        "time": "8:00 PM  Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
@@ -58,7 +58,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "8:00 PM  - Worship Service",
+        "time": "8:00 PM  Worship Service",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
@@ -67,7 +67,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "8:00 PM  - Worship Service",
+        "time": "8:00 PM  Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
         "id": "ronnie-cunanan"
@@ -91,7 +91,7 @@
       {
         "day": "Sat",
         "date": "04 Apr 2026",
-        "time": "6:00 PM - Worship Service",
+        "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
@@ -99,7 +99,7 @@
       {
         "day": "Sat",
         "date": "04 Apr 2026",
-        "time": "6:00 PM - Worship Service",
+        "time": "6:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
@@ -108,7 +108,7 @@
       {
         "day": "Sat",
         "date": "04 Apr 2026",
-        "time": "6:00 PM - Worship Service",
+        "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
         "id": "ronnie-cunanan"
@@ -116,7 +116,7 @@
       {
         "day": "Sun",
         "date": "05 Apr 2026",
-        "time": "8:00 AM - Worship Service",
+        "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
@@ -124,7 +124,7 @@
       {
         "day": "Sun",
         "date": "05 Apr 2026",
-        "time": "8:00 AM - Worship Service",
+        "time": "8:00 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
@@ -133,7 +133,7 @@
       {
         "day": "Sun",
         "date": "05 Apr 2026",
-        "time": "8:00 AM - Worship Service",
+        "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
         "id": null,
