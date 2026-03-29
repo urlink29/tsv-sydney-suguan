@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Mar 30 to Apr 05, 2026",
-    "storageKey": "tsv_sigs_mar30toapr052026_20260329162333",
+    "storageKey": "tsv_sigs_mar30toapr052026_20260329163012",
     "rows": [
       {
         "day": "Mon",
@@ -643,15 +643,15 @@
     }
   ],
   "pins": {
-    "Jonathan Au": "14785236",
-    "Ronnie Cunanan": "14785236",
-    "Jay Beltran": "14785236",
-    "Karez Bartolo": "14785236",
-    "Dwight Alegros": "14785236",
-    "Adrian Dela Cruz": "14785236",
-    "Jerick Dadios": "14785236",
-    "Ethan Au": "14785236",
-    "Choir Leaders": "20282028"
+    "Jonathan Au": "147852",
+    "Ronnie Cunanan": "147852",
+    "Jay Beltran": "147852",
+    "Karez Bartolo": "147852",
+    "Dwight Alegros": "147852",
+    "Adrian Dela Cruz": "147852",
+    "Jerick Dadios": "147852",
+    "Ethan Au": "147852",
+    "Choir Leaders": "071914"
   },
   "onLeave": []
 }
