@@ -3,12 +3,12 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Mar 30 to Apr 05, 2026",
-    "storageKey": "tsv_sigs_mar30toapr052026_20260329163012",
+    "storageKey": "tsv_sigs_mar30toapr052026_20260330151329",
     "rows": [
       {
         "day": "Mon",
         "date": "30 Mar 2026",
-        "time": "PM - Any Activity",
+        "time": "General Meeting",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
         "id": "ronnie-cunanan"
@@ -24,7 +24,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "6:30 AM Worship Service",
+        "time": "6:30 AM - Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
@@ -32,16 +32,16 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "6:30 AM Worship Service",
+        "time": "6:30 AM - Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Adrian Dela Cruz",
         "id": null,
-        "skip": "Pre-Assigned"
+        "skip": "Assigned by Choir Leaders"
       },
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "6:30 AM Worship Service",
+        "time": "6:30 AM - Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
         "id": null,
@@ -50,7 +50,7 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "8:00 PM  Worship Service",
+        "time": "8:00 PM  - Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
@@ -58,16 +58,16 @@
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "8:00 PM  Worship Service",
+        "time": "8:00 PM  - Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Jun Valle",
         "id": null,
-        "skip": "Pre-Assigned"
+        "skip": "Assigned by Choir Leaders"
       },
       {
         "day": "Wed",
         "date": "01 Apr 2026",
-        "time": "8:00 PM  Worship Service",
+        "time": "8:00 PM  - Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
         "id": "ronnie-cunanan"
@@ -91,7 +91,7 @@
       {
         "day": "Sat",
         "date": "04 Apr 2026",
-        "time": "6:00 PM Worship Service",
+        "time": "6:00 PM - Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
@@ -99,16 +99,16 @@
       {
         "day": "Sat",
         "date": "04 Apr 2026",
-        "time": "6:00 PM Worship Service",
+        "time": "6:00 PM - Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Arien Maduli",
         "id": null,
-        "skip": "Pre-Assigned"
+        "skip": "Assigned by Choir Leaders"
       },
       {
         "day": "Sat",
         "date": "04 Apr 2026",
-        "time": "6:00 PM Worship Service",
+        "time": "6:00 PM - Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
         "id": "ronnie-cunanan"
@@ -116,7 +116,7 @@
       {
         "day": "Sun",
         "date": "05 Apr 2026",
-        "time": "8:00 AM Worship Service",
+        "time": "8:00 AM - Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
@@ -124,20 +124,19 @@
       {
         "day": "Sun",
         "date": "05 Apr 2026",
-        "time": "8:00 AM Worship Service",
+        "time": "8:00 AM - Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Franz Dela Pena",
         "id": null,
-        "skip": "Pre-Assigned"
+        "skip": "Assigned by Choir Leaders"
       },
       {
         "day": "Sun",
         "date": "05 Apr 2026",
-        "time": "8:00 AM Worship Service",
+        "time": "8:00 AM - Worship Service",
         "duty": "AV Monitor",
-        "name": "HD Reserve",
-        "id": null,
-        "skip": "Not Applicable"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       }
     ],
     "officers": [
@@ -182,7 +181,7 @@
         "time": "6:30 AM",
         "names": [
           "Dwight",
-          "TBA",
+          "Adrian",
           "HD Reserve"
         ]
       },
@@ -193,7 +192,7 @@
         "time": "8:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "Jun",
           "HD Reserve"
         ]
       },
@@ -222,7 +221,7 @@
         "time": "6:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "Arien",
           "Ronnie"
         ]
       },
@@ -233,8 +232,8 @@
         "time": "8:00 AM",
         "names": [
           "Dwight",
-          "TBA",
-          "HD Reserve"
+          "franz",
+          "Jay"
         ]
       },
       {
@@ -567,7 +566,7 @@
       "phone": "0420 721 244",
       "email": "than.au@hotmail.com",
       "cat": "TSV",
-      "user": "Admin"
+      "user": "Signer"
     },
     {
       "fullName": "Ronnie Cunanan",
@@ -576,7 +575,7 @@
       "phone": "0400 387 866",
       "email": "rbcunanan@yahoo.com",
       "cat": "TSV",
-      "user": "Admin"
+      "user": "Signer"
     },
     {
       "fullName": "Jay Beltran",
