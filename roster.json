@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Mar 30 to Apr 05, 2026",
-    "storageKey": "tsv_sigs_mar30toapr052026_20260330152520",
+    "storageKey": "tsv_sigs_mar30toapr052026_20260330153928",
     "rows": [
       {
         "day": "Mon",
@@ -35,8 +35,7 @@
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
         "name": "Adrian Dela Cruz",
-        "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "id": "adrian-dela-cruz"
       },
       {
         "day": "Wed",
@@ -62,7 +61,7 @@
         "duty": "HVO",
         "name": "Jun Valle",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
@@ -103,7 +102,7 @@
         "duty": "HVO",
         "name": "Arien Maduli",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Sat",
@@ -128,15 +127,16 @@
         "duty": "HVO",
         "name": "Franz Dela Pena",
         "id": null,
-        "skip": "Assigned by Choir Leaders"
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Sun",
         "date": "05 Apr 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
       }
     ],
     "officers": [
@@ -233,7 +233,7 @@
         "names": [
           "Dwight",
           "Franz",
-          "Jay"
+          "HD Reserve"
         ]
       },
       {
