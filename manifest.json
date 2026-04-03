@@ -2,7 +2,7 @@
   "name": "TSV Portal",
   "short_name": "TSV Portal",
   "description": "Sydney TSV Suguan Roster Portal",
-  "start_url": "./index.html",
+  "start_url": "/tsv-sydney-suguan/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0f1f35",
