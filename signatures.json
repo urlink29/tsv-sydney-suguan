@@ -61,5 +61,15 @@
       "ts": "13 Apr 2026, 12:08 pm",
       "memberName": "Jonathan Au"
     }
-  }
+  },
+  "leaveRequests": {
+    "jay-beltran_1776216494996": {
+      "requestKey": "jay-beltran_1776216494996",
+      "name": "Jay Beltran",
+      "from": "20 Apr 2026",
+      "to": "23 Apr 2026",
+      "requestedBy": "Jay Beltran"
+    }
+  },
+  "hvoAssignments": {}
 }
