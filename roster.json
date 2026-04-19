@@ -2,12 +2,12 @@
   "rosterType": "T1R",
   "monthType": "T2M",
   "roster": {
-    "weekLabel": "Apr 13 to 19, 2026",
-    "storageKey": "tsv_sigs_apr13to192026_20260412183449",
+    "weekLabel": "Apr 20 to 26, 2026",
+    "storageKey": "tsv_sigs_apr20to262026_20260420091519",
     "rows": [
       {
         "day": "Mon",
-        "date": "13 Apr 2026",
+        "date": "20 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +15,7 @@
       },
       {
         "day": "Tue",
-        "date": "14 Apr 2026",
+        "date": "21 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,24 +23,24 @@
       },
       {
         "day": "Wed",
-        "date": "15 Apr 2026",
+        "date": "22 Apr 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Wed",
-        "date": "15 Apr 2026",
+        "date": "22 Apr 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "Neus Baquir",
+        "name": "AJ Corona",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "15 Apr 2026",
+        "date": "22 Apr 2026",
         "time": "6:30 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
@@ -49,24 +49,24 @@
       },
       {
         "day": "Wed",
-        "date": "15 Apr 2026",
+        "date": "22 Apr 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Wed",
-        "date": "15 Apr 2026",
+        "date": "22 Apr 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "Jeunesse Beltran",
+        "name": "Marseval Abella",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "15 Apr 2026",
+        "date": "22 Apr 2026",
         "time": "8:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -74,15 +74,15 @@
       },
       {
         "day": "Thu",
-        "date": "16 Apr 2026",
+        "date": "23 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
-        "name": "Adrian Dela Cruz",
-        "id": "adrian-dela-cruz"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Fri",
-        "date": "17 Apr 2026",
+        "date": "24 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jonathan Au",
@@ -90,23 +90,24 @@
       },
       {
         "day": "Sat",
-        "date": "18 Apr 2026",
+        "date": "25 Apr 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
       },
       {
         "day": "Sat",
-        "date": "18 Apr 2026",
+        "date": "25 Apr 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "Jerick Dadios",
-        "id": "jerick-dadios"
+        "name": "Ciara Ronquillo",
+        "id": null,
+        "skip": "Pre-Assigned"
       },
       {
         "day": "Sat",
-        "date": "18 Apr 2026",
+        "date": "25 Apr 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -114,29 +115,28 @@
       },
       {
         "day": "Sun",
-        "date": "19 Apr 2026",
+        "date": "26 Apr 2026",
         "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Sun",
-        "date": "19 Apr 2026",
+        "date": "26 Apr 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "Princess Alegros",
+        "name": "Marcus Rivera",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sun",
-        "date": "19 Apr 2026",
+        "date": "26 Apr 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
-        "name": "HD Reserve",
-        "id": null,
-        "skip": "Not Applicable"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       }
     ],
     "officers": [
@@ -420,8 +420,8 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Dwight",
-          "TBA",
+          "Jay",
+          "AJ",
           "HD Reserve"
         ]
       },
@@ -431,8 +431,8 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Jay",
-          "TBA",
+          "Dwight",
+          "Marseval",
           "Ronnie"
         ]
       },
@@ -461,7 +461,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Ciara",
           "Ronnie"
         ]
       },
@@ -472,7 +472,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Marcus",
           "Dwight"
         ]
       },
