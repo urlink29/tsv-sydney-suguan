@@ -75,5 +75,10 @@
     }
   },
   "leaveRequests": {},
-  "hvoAssignments": {}
+  "hvoAssignments": {
+    "2026-3-29-am": "Ethan",
+    "2026-3-29-pm": "Daniel",
+    "2026-4-2-pm": "Jerick",
+    "2026-4-3-am": "DanDan"
+  }
 }
