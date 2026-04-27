@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Apr 27 to May 03, 2026",
-    "storageKey": "tsv_sigs_apr27tomay032026_20260427205258",
+    "storageKey": "tsv_sigs_apr27tomay032026_20260427211212",
     "rows": [
       {
         "day": "Mon",
@@ -101,8 +101,7 @@
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
         "name": "Jerick Dadios",
-        "id": null,
-        "skip": "Pre-Assigned"
+        "id": "jerick-dadios"
       },
       {
         "day": "Sat",
@@ -605,42 +604,6 @@
       "user": "Signer"
     },
     {
-      "fullName": "Bryan Catacutan",
-      "firstName": "Bryan",
-      "id": "bryan-catacutan",
-      "phone": "0466 800 625",
-      "email": null,
-      "cat": "TSV",
-      "user": "Signer"
-    },
-    {
-      "fullName": "Arden Galvez",
-      "firstName": "Arden",
-      "id": "arden-galvez",
-      "phone": "0475 613 111",
-      "email": null,
-      "cat": "TSV",
-      "user": "Signer"
-    },
-    {
-      "fullName": "Robbie Galvez",
-      "firstName": "Robbie",
-      "id": "robbie-galvez",
-      "phone": "0433 535 388",
-      "email": null,
-      "cat": "TSV",
-      "user": "Signer"
-    },
-    {
-      "fullName": "Jacob Abinguna",
-      "firstName": "Jacob",
-      "id": "jacob-abinguna",
-      "phone": "0401 250 644",
-      "email": null,
-      "cat": "TSV",
-      "user": "Signer"
-    },
-    {
       "fullName": "Adrian Dela Cruz",
       "firstName": "Adrian",
       "id": "adrian-dela-cruz",
@@ -664,15 +627,6 @@
       "id": "ethan-au",
       "phone": "0468 440 100",
       "email": "lorenzoau21@gmail.com",
-      "cat": "CHOIR TSV",
-      "user": "Signer"
-    },
-    {
-      "fullName": "Arien Maduli",
-      "firstName": "Arien",
-      "id": "arien-maduli",
-      "phone": "0406 942 175",
-      "email": null,
       "cat": "CHOIR TSV",
       "user": "Signer"
     },
@@ -701,14 +655,9 @@
     "Jay Beltran": "147852",
     "Karez Bartolo": "147852",
     "Dwight Alegros": "147852",
-    "Bryan Catacutan": "147852",
-    "Arden Galvez": "147852",
-    "Robbie Galvez": "147852",
-    "Jacob Abinguna": "147852",
     "Adrian Dela Cruz": "147852",
     "Jerick Dadios": "147852",
     "Ethan Au": "147852",
-    "Arien Maduli": "147852",
     "Leadership": "071914",
     "Choir Leaders": "071914"
   },
