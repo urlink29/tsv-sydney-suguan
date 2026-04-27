@@ -2,12 +2,12 @@
   "rosterType": "T1R",
   "monthType": "T2M",
   "roster": {
-    "weekLabel": "Apr 20 to 26, 2026",
-    "storageKey": "tsv_sigs_apr20to262026_20260420091519",
+    "weekLabel": "Apr 27 to May 03, 2026",
+    "storageKey": "tsv_sigs_apr27tomay032026_20260427205258",
     "rows": [
       {
         "day": "Mon",
-        "date": "20 Apr 2026",
+        "date": "27 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +15,7 @@
       },
       {
         "day": "Tue",
-        "date": "21 Apr 2026",
+        "date": "28 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,24 +23,23 @@
       },
       {
         "day": "Wed",
-        "date": "22 Apr 2026",
+        "date": "29 Apr 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Wed",
-        "date": "22 Apr 2026",
+        "date": "29 Apr 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "AJ Corona",
-        "id": null,
-        "skip": "Pre-Assigned"
+        "name": "Ethan Au",
+        "id": "ethan-au"
       },
       {
         "day": "Wed",
-        "date": "22 Apr 2026",
+        "date": "29 Apr 2026",
         "time": "6:30 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
@@ -49,24 +48,24 @@
       },
       {
         "day": "Wed",
-        "date": "22 Apr 2026",
+        "date": "29 Apr 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Wed",
-        "date": "22 Apr 2026",
+        "date": "29 Apr 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "Marseval Abella",
+        "name": "Daniel Anunciacion",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "22 Apr 2026",
+        "date": "29 Apr 2026",
         "time": "8:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -74,15 +73,15 @@
       },
       {
         "day": "Thu",
-        "date": "23 Apr 2026",
+        "date": "30 Apr 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Adrian Dela Cruz",
+        "id": "adrian-dela-cruz"
       },
       {
         "day": "Fri",
-        "date": "24 Apr 2026",
+        "date": "01 May 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jonathan Au",
@@ -90,24 +89,24 @@
       },
       {
         "day": "Sat",
-        "date": "25 Apr 2026",
+        "date": "02 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Karez Bartolo",
-        "id": "karez-bartolo"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Sat",
-        "date": "25 Apr 2026",
+        "date": "02 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "Ciara Ronquillo",
+        "name": "Jerick Dadios",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sat",
-        "date": "25 Apr 2026",
+        "date": "02 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -115,28 +114,29 @@
       },
       {
         "day": "Sun",
-        "date": "26 Apr 2026",
+        "date": "03 May 2026",
         "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Sun",
-        "date": "26 Apr 2026",
+        "date": "03 May 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "Marcus Rivera",
+        "name": "Dandan Diaz",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sun",
-        "date": "26 Apr 2026",
+        "date": "03 May 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
       }
     ],
     "officers": [
@@ -501,7 +501,7 @@
         "time": "6:30 AM",
         "names": [
           "Dwight",
-          "TBA",
+          "Ethan",
           "HD Reserve"
         ]
       },
@@ -512,7 +512,7 @@
         "time": "8:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "Daniel",
           "Ronnie"
         ]
       },
@@ -541,7 +541,7 @@
         "time": "6:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "Jerick",
           "Ronnie"
         ]
       },
@@ -552,7 +552,7 @@
         "time": "8:00 AM",
         "names": [
           "Dwight",
-          "TBA",
+          "Dandan",
           "HD Reserve"
         ]
       }
@@ -605,6 +605,42 @@
       "user": "Signer"
     },
     {
+      "fullName": "Bryan Catacutan",
+      "firstName": "Bryan",
+      "id": "bryan-catacutan",
+      "phone": "0466 800 625",
+      "email": null,
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Arden Galvez",
+      "firstName": "Arden",
+      "id": "arden-galvez",
+      "phone": "0475 613 111",
+      "email": null,
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Robbie Galvez",
+      "firstName": "Robbie",
+      "id": "robbie-galvez",
+      "phone": "0433 535 388",
+      "email": null,
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Jacob Abinguna",
+      "firstName": "Jacob",
+      "id": "jacob-abinguna",
+      "phone": "0401 250 644",
+      "email": null,
+      "cat": "TSV",
+      "user": "Signer"
+    },
+    {
       "fullName": "Adrian Dela Cruz",
       "firstName": "Adrian",
       "id": "adrian-dela-cruz",
@@ -628,6 +664,15 @@
       "id": "ethan-au",
       "phone": "0468 440 100",
       "email": "lorenzoau21@gmail.com",
+      "cat": "CHOIR TSV",
+      "user": "Signer"
+    },
+    {
+      "fullName": "Arien Maduli",
+      "firstName": "Arien",
+      "id": "arien-maduli",
+      "phone": "0406 942 175",
+      "email": null,
       "cat": "CHOIR TSV",
       "user": "Signer"
     },
@@ -656,9 +701,14 @@
     "Jay Beltran": "147852",
     "Karez Bartolo": "147852",
     "Dwight Alegros": "147852",
+    "Bryan Catacutan": "147852",
+    "Arden Galvez": "147852",
+    "Robbie Galvez": "147852",
+    "Jacob Abinguna": "147852",
     "Adrian Dela Cruz": "147852",
     "Jerick Dadios": "147852",
     "Ethan Au": "147852",
+    "Arien Maduli": "147852",
     "Leadership": "071914",
     "Choir Leaders": "071914"
   },
