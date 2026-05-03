@@ -21,5 +21,10 @@
     }
   },
   "leaveRequests": {},
-  "hvoAssignments": {}
+  "hvoAssignments": {
+    "2026-4-6-am": "Bro Marcus / Bro Neus",
+    "2026-4-6-pm": "Bro Benaur / Bro Angelo",
+    "2026-4-9-pm": "Sis Dulcine / Sis Ciara",
+    "2026-4-10-am": "Bro Ethan / Bro Marcus"
+  }
 }
