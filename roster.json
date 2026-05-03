@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "May 04 to 10, 2026",
-    "storageKey": "tsv_sigs_may04to102026_20260503174849",
+    "storageKey": "tsv_sigs_may04to102026_20260503180843",
     "rows": [
       {
         "day": "Mon",
@@ -26,8 +26,8 @@
         "date": "06 May 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Wed",
@@ -52,8 +52,8 @@
         "date": "06 May 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Wed",
@@ -180,7 +180,7 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Dwight",
+          "Jay",
           "TBA",
           "HD Reserve"
         ]
@@ -191,7 +191,7 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Jay",
+          "Dwight",
           "TBA",
           "Ronnie"
         ]
