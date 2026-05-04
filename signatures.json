@@ -1,30 +1,6 @@
 {
-  "storageKey": "tsv_sigs_may04to102026_20260503180843",
-  "sigs": {
-    "row_5": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "04 May 2026 at 06:30 am",
-      "memberName": "Dwight Alegros"
-    },
-    "row_8": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "04 May 2026 at 06:30 am",
-      "memberName": "Dwight Alegros"
-    },
-    "row_15": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "04 May 2026 at 06:30 am",
-      "memberName": "Dwight Alegros"
-    }
-  },
+  "storageKey": "tsv_sigs_may04to102026_20260503174849",
+  "sigs": {},
   "leaveRequests": {},
-  "hvoAssignments": {
-    "2026-4-6-am": "Bro Marcus || Bro Neus",
-    "2026-4-6-pm": "Bro Benaur || Bro Angelo",
-    "2026-4-9-pm": "Sis Dulcine || Sis Ciara",
-    "2026-4-10-am": "Bro Ethan || Bro Marcus"
-  }
+  "hvoAssignments": {}
 }
