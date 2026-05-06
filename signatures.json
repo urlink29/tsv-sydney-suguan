@@ -1,40 +1,6 @@
 {
-  "storageKey": "tsv_sigs_may04to102026_20260503180843",
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "04 May 2026, 02:55 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_2": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "04 May 2026, 02:55 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_13": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "04 May 2026, 02:55 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_7": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "04 May 2026 at 03:10 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_12": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "04 May 2026 at 03:10 pm",
-      "memberName": "Ronnie Cunanan"
-    }
-  },
+  "storageKey": "tsv_sigs_may04to102026_20260506111552",
+  "sigs": {},
   "leaveRequests": {},
-  "hvoAssignments": {
-    "2026-4-9-pm": "Dulcine",
-    "2026-4-10-am": "TSV"
-  }
+  "hvoAssignments": {}
 }
