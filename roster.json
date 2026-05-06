@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "May 04 to 10, 2026",
-    "storageKey": "tsv_sigs_may04to102026_20260503180843",
+    "storageKey": "tsv_sigs_may04to102026_20260506111552",
     "rows": [
       {
         "day": "Mon",
@@ -34,7 +34,7 @@
         "date": "06 May 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Marcus Rivera",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -60,7 +60,7 @@
         "date": "06 May 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Benaur Valle",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -101,7 +101,7 @@
         "date": "09 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Dulcine Luzon",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -181,7 +181,7 @@
         "time": "6:30 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Marcus",
           "HD Reserve"
         ]
       },
@@ -192,7 +192,7 @@
         "time": "8:00 PM",
         "names": [
           "Dwight",
-          "TBA",
+          "Benaur",
           "Ronnie"
         ]
       },
@@ -221,7 +221,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Dulcne",
           "Ronnie"
         ]
       },
