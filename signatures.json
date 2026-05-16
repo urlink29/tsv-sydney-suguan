@@ -38,7 +38,15 @@
       "memberName": "Dwight Alegros"
     }
   },
-  "leaveRequests": {},
+  "leaveRequests": {
+    "dwight-alegros_1778914274505": {
+      "requestKey": "dwight-alegros_1778914274505",
+      "name": "Dwight Alegros",
+      "from": "18 May 2026",
+      "to": "20 May 2026",
+      "requestedBy": "Dwight Alegros"
+    }
+  },
   "hvoAssignments": {
     "2026-4-13-am": "Bro Arien M",
     "2026-4-16-pm": "Bro Jerick D",
