@@ -1,56 +1,6 @@
 {
-  "storageKey": "tsv_sigs_may11to172026_20260511111511",
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "11 May 2026, 11:18 am",
-      "memberName": "Jay Beltran"
-    },
-    "row_5": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "11 May 2026, 11:18 am",
-      "memberName": "Jay Beltran"
-    },
-    "row_10": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "11 May 2026, 11:18 am",
-      "memberName": "Jay Beltran"
-    },
-    "row_2": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "11 May 2026 at 11:27 am",
-      "memberName": "Dwight Alegros"
-    },
-    "row_8": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "11 May 2026 at 11:27 am",
-      "memberName": "Dwight Alegros"
-    },
-    "row_13": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "11 May 2026 at 11:27 am",
-      "memberName": "Dwight Alegros"
-    }
-  },
-  "leaveRequests": {
-    "dwight-alegros_1778914274505": {
-      "requestKey": "dwight-alegros_1778914274505",
-      "name": "Dwight Alegros",
-      "from": "18 May 2026",
-      "to": "20 May 2026",
-      "requestedBy": "Dwight Alegros"
-    }
-  },
-  "hvoAssignments": {
-    "2026-4-13-am": "Bro Arien M",
-    "2026-4-16-pm": "Bro Jerick D",
-    "2026-4-17-am": "Bro Leinad D",
-    "2026-4-13-pm": "Bro Angelo S"
-  }
+  "storageKey": "tsv_sigs_may18to242026_20260518144053",
+  "sigs": {},
+  "leaveRequests": {},
+  "hvoAssignments": {}
 }
