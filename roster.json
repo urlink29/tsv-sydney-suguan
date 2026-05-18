@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "May 18 to 24, 2026",
-    "storageKey": "tsv_sigs_may18to242026_20260518151634",
+    "storageKey": "tsv_sigs_may18to242026_20260518153639",
     "rows": [
       {
         "day": "Mon",
@@ -26,8 +26,8 @@
         "date": "20 May 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Wed",
@@ -52,8 +52,8 @@
         "date": "20 May 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Wed",
@@ -69,8 +69,9 @@
         "date": "20 May 2026",
         "time": "8:00 PM Worship Service",
         "duty": "AV Monitor",
-        "name": "Ronnie Cunanan",
-        "id": "ronnie-cunanan"
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
       },
       {
         "day": "Thu",
@@ -340,7 +341,7 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Dwight",
+          "Jay",
           "TBA",
           "HD Reserve"
         ]
@@ -351,9 +352,9 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Jay",
+          "Ronnie",
           "TBA",
-          "Ronnie"
+          "HD Reserve"
         ]
       },
       {
@@ -572,5 +573,11 @@
     "Leadership": "071914",
     "Choir Leaders": "071914"
   },
-  "onLeave": []
+  "onLeave": [
+    {
+      "name": "Dwight Alegros",
+      "from": "18 May 2026",
+      "to": "21 May 2026"
+    }
+  ]
 }
