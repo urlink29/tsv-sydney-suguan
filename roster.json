@@ -2,12 +2,12 @@
   "rosterType": "T1R",
   "monthType": "T1M",
   "roster": {
-    "weekLabel": "May 18 to 24, 2026",
-    "storageKey": "tsv_sigs_may18to242026_20260518153639",
+    "weekLabel": "May 25 to 31, 2026",
+    "storageKey": "tsv_sigs_may25to312026_20260525184151",
     "rows": [
       {
         "day": "Mon",
-        "date": "18 May 2026",
+        "date": "25 May 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +15,7 @@
       },
       {
         "day": "Tue",
-        "date": "19 May 2026",
+        "date": "26 May 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,16 +23,42 @@
       },
       {
         "day": "Wed",
-        "date": "20 May 2026",
+        "date": "27 May 2026",
         "time": "6:30 AM Worship Service",
+        "duty": "TSV Admin",
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
+      },
+      {
+        "day": "Wed",
+        "date": "27 May 2026",
+        "time": "6:30 AM Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Wed",
+        "date": "27 May 2026",
+        "time": "6:30 AM Worship Service",
+        "duty": "AV Monitor",
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
+      },
+      {
+        "day": "Wed",
+        "date": "27 May 2026",
+        "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
         "day": "Wed",
-        "date": "20 May 2026",
-        "time": "6:30 AM Worship Service",
+        "date": "27 May 2026",
+        "time": "8:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
@@ -40,42 +66,15 @@
       },
       {
         "day": "Wed",
-        "date": "20 May 2026",
-        "time": "6:30 AM Worship Service",
-        "duty": "AV Monitor",
-        "name": "HD Reserve",
-        "id": null,
-        "skip": "Not Applicable"
-      },
-      {
-        "day": "Wed",
-        "date": "20 May 2026",
+        "date": "27 May 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Admin",
+        "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
         "id": "ronnie-cunanan"
       },
       {
-        "day": "Wed",
-        "date": "20 May 2026",
-        "time": "8:00 PM Worship Service",
-        "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Wed",
-        "date": "20 May 2026",
-        "time": "8:00 PM Worship Service",
-        "duty": "AV Monitor",
-        "name": "HD Reserve",
-        "id": null,
-        "skip": "Not Applicable"
-      },
-      {
         "day": "Thu",
-        "date": "21 May 2026",
+        "date": "28 May 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -83,23 +82,23 @@
       },
       {
         "day": "Fri",
-        "date": "22 May 2026",
+        "date": "29 May 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
-        "name": "Ethan Au",
-        "id": "ethan-au"
+        "name": "Jonathan Au",
+        "id": "jonathan-au"
       },
       {
         "day": "Sat",
-        "date": "23 May 2026",
+        "date": "30 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Karez Bartolo",
-        "id": "karez-bartolo"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Sat",
-        "date": "23 May 2026",
+        "date": "30 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -108,7 +107,7 @@
       },
       {
         "day": "Sat",
-        "date": "23 May 2026",
+        "date": "30 May 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -116,15 +115,15 @@
       },
       {
         "day": "Sun",
-        "date": "24 May 2026",
+        "date": "31 May 2026",
         "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Sun",
-        "date": "24 May 2026",
+        "date": "31 May 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -133,11 +132,12 @@
       },
       {
         "day": "Sun",
-        "date": "24 May 2026",
+        "date": "31 May 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
       }
     ],
     "officers": [
@@ -573,11 +573,5 @@
     "Leadership": "071914",
     "Choir Leaders": "071914"
   },
-  "onLeave": [
-    {
-      "name": "Dwight Alegros",
-      "from": "18 May 2026",
-      "to": "21 May 2026"
-    }
-  ]
+  "onLeave": []
 }
