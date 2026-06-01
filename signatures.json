@@ -1,61 +1,6 @@
 {
-  "storageKey": "tsv_sigs_may25to312026_20260525184151",
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "25 May 2026, 06:44 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_5": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "25 May 2026, 06:44 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_10": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "25 May 2026, 06:44 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_0": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "25 May 2026 at 06:55 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_7": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "25 May 2026 at 06:55 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_12": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "25 May 2026 at 06:56 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_2": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "25 May 2026 at 07:27 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_8": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "25 May 2026 at 07:27 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_13": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "25 May 2026 at 07:27 pm",
-      "memberName": "Dwight Alegros"
-    }
-  },
+  "storageKey": "tsv_sigs_jun01to072026_20260601111855",
+  "sigs": {},
   "leaveRequests": {},
   "hvoAssignments": {}
 }
