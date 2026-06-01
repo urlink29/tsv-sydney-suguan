@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "Jun 01 to 07, 2026",
-    "storageKey": "tsv_sigs_jun01to072026_20260601111855",
+    "storageKey": "tsv_sigs_jun01to072026_20260601112608",
     "rows": [
       {
         "day": "Mon",
@@ -530,7 +530,7 @@
       "firstName": "Bryan",
       "id": "bryan-catacutan",
       "phone": "0466 800 625",
-      "email": null,
+      "email": "pls_give@your_email.com",
       "cat": "TSV",
       "user": "Signer"
     },
@@ -539,7 +539,7 @@
       "firstName": "Arden",
       "id": "arden-galvez",
       "phone": "0475 613 111",
-      "email": null,
+      "email": "pls_give@your_email.com",
       "cat": "TSV",
       "user": "Signer"
     },
@@ -548,7 +548,7 @@
       "firstName": "Robbie",
       "id": "robbie-galvez",
       "phone": "0433 535 388",
-      "email": null,
+      "email": "pls_give@your_email.com",
       "cat": "TSV",
       "user": "Signer"
     },
@@ -557,7 +557,7 @@
       "firstName": "Jacob",
       "id": "jacob-abinguna",
       "phone": "0401 250 644",
-      "email": null,
+      "email": "pls_give@your_email.com",
       "cat": "TSV",
       "user": "Signer"
     },
@@ -584,7 +584,7 @@
       "firstName": "Arien",
       "id": "arien-maduli",
       "phone": "0406 942 175",
-      "email": null,
+      "email": "pls_give@your_email.com",
       "cat": "CHOIR TSV",
       "user": "Signer"
     },
