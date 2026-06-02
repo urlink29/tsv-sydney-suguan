@@ -45,5 +45,10 @@
     }
   },
   "leaveRequests": {},
-  "hvoAssignments": {}
+  "hvoAssignments": {
+    "2026-5-3-am": "Princess",
+    "2026-5-3-pm": "Jhun V",
+    "2026-5-6-pm": "Elle",
+    "2026-5-7-am": "Ethan"
+  }
 }
