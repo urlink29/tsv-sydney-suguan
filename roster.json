@@ -2,12 +2,12 @@
   "rosterType": "T1R",
   "monthType": "T1M",
   "roster": {
-    "weekLabel": "Jun 01 to 07, 2026",
-    "storageKey": "tsv_sigs_jun01to072026_20260601112608",
+    "weekLabel": "Jun 08 to 14, 2026",
+    "storageKey": "tsv_sigs_jun08to142026_20260609163238",
     "rows": [
       {
         "day": "Mon",
-        "date": "01 Jun 2026",
+        "date": "08 Jun 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +15,7 @@
       },
       {
         "day": "Tue",
-        "date": "02 Jun 2026",
+        "date": "09 Jun 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,7 +23,7 @@
       },
       {
         "day": "Wed",
-        "date": "03 Jun 2026",
+        "date": "10 Jun 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -31,16 +31,15 @@
       },
       {
         "day": "Wed",
-        "date": "03 Jun 2026",
+        "date": "10 Jun 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
+        "name": "Jacob Abinguna",
+        "id": "jacob-abinguna"
       },
       {
         "day": "Wed",
-        "date": "03 Jun 2026",
+        "date": "10 Jun 2026",
         "time": "6:30 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
@@ -49,7 +48,7 @@
       },
       {
         "day": "Wed",
-        "date": "03 Jun 2026",
+        "date": "10 Jun 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -57,16 +56,16 @@
       },
       {
         "day": "Wed",
-        "date": "03 Jun 2026",
+        "date": "10 Jun 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "JV San Pedro",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "03 Jun 2026",
+        "date": "10 Jun 2026",
         "time": "8:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -74,7 +73,7 @@
       },
       {
         "day": "Thu",
-        "date": "04 Jun 2026",
+        "date": "11 Jun 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -82,15 +81,15 @@
       },
       {
         "day": "Fri",
-        "date": "05 Jun 2026",
+        "date": "12 Jun 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
-        "name": "Ethan Au",
-        "id": "ethan-au"
+        "name": "Jonatthan Au",
+        "id": null
       },
       {
         "day": "Sat",
-        "date": "06 Jun 2026",
+        "date": "13 Jun 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Karez Bartolo",
@@ -98,16 +97,16 @@
       },
       {
         "day": "Sat",
-        "date": "06 Jun 2026",
+        "date": "13 Jun 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Crizelle Maduli",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sat",
-        "date": "06 Jun 2026",
+        "date": "13 Jun 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
         "name": "Ronnie Cunanan",
@@ -115,24 +114,24 @@
       },
       {
         "day": "Sun",
-        "date": "07 Jun 2026",
+        "date": "14 Jun 2026",
         "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Sun",
-        "date": "07 Jun 2026",
+        "date": "14 Jun 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Neus Baquir",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sun",
-        "date": "07 Jun 2026",
+        "date": "14 Jun 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserve",
@@ -262,7 +261,7 @@
         "time": "6:30 AM",
         "names": [
           "Dwight",
-          "TBA",
+          "Jacob",
           "HD Reserve"
         ]
       },
@@ -273,7 +272,7 @@
         "time": "8:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "JV",
           "Ronnie"
         ]
       },
@@ -302,7 +301,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Crizelle",
           "Ronnie"
         ]
       },
@@ -313,7 +312,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Neus",
           "Dwight"
         ]
       },
@@ -623,11 +622,5 @@
     "Leadership": "071914",
     "Choir Leaders": "071914"
   },
-  "onLeave": [
-    {
-      "name": "Jay Beltran",
-      "from": "07 Jun 2026",
-      "to": "08 Jun 2026"
-    }
-  ]
+  "onLeave": []
 }
