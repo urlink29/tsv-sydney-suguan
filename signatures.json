@@ -1,66 +1,6 @@
 {
-  "storageKey": "tsv_sigs_jun01to072026_20260601112608",
-  "sigs": {
-    "row_2": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "01 Jun 2026 at 12:10 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_13": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "01 Jun 2026 at 12:10 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_0": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "01 Jun 2026 at 12:19 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_7": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "01 Jun 2026 at 12:19 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_12": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "01 Jun 2026 at 12:19 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_9": {
-      "data": "Ethan Au",
-      "type": "type",
-      "ts": "01 Jun 2026 at 02:12 pm",
-      "memberName": "Ethan Au"
-    },
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "02 June 2026, 09:10 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_5": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "03 June 2026, 02:40 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_10": {
-      "data": "Karez Bartolo",
-      "type": "type",
-      "ts": "03 Jun 2026 at 05:55 pm",
-      "memberName": "Karez Bartolo"
-    }
-  },
+  "storageKey": "tsv_sigs_jun08to142026_20260609163238",
+  "sigs": {},
   "leaveRequests": {},
-  "hvoAssignments": {
-    "2026-5-3-am": "Princess",
-    "2026-5-3-pm": "Jhun V",
-    "2026-5-6-pm": "Elle",
-    "2026-5-7-am": "Ethan"
-  }
+  "hvoAssignments": {}
 }
