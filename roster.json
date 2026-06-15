@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "Jun 15 to 21, 2026",
-    "storageKey": "tsv_sigs_jun15to212026_20260615160512",
+    "storageKey": "tsv_sigs_jun15to212026_20260615165300",
     "rows": [
       {
         "day": "Mon",
@@ -69,8 +69,9 @@
         "date": "17 Jun 2026",
         "time": "8:00 PM Worship Service",
         "duty": "AV Monitor",
-        "name": "Ronnie Cunanan",
-        "id": "ronnie-cunanan"
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Applicable"
       },
       {
         "day": "Thu",
@@ -354,7 +355,7 @@
         "names": [
           "Jay",
           "TBA",
-          "Ronnie"
+          "HD Reserve"
         ]
       },
       {
@@ -379,7 +380,7 @@
         "date": 20,
         "month": 5,
         "day": "Sat",
-        "time": "Sat Dec 30 1899 19:00:00 GMT+1000 (Australian Eastern Daylight Time)",
+        "time": "7:00 PM",
         "names": [
           "Jay",
           "TBA",
@@ -390,7 +391,7 @@
         "date": 21,
         "month": 5,
         "day": "Sun",
-        "time": "Sat Dec 30 1899 10:00:00 GMT+1000 (Australian Eastern Daylight Time)",
+        "time": "10:00 AM",
         "names": [
           "Dwight",
           "TBA",
