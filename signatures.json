@@ -39,5 +39,10 @@
     }
   },
   "leaveRequests": {},
-  "hvoAssignments": {}
+  "hvoAssignments": {
+    "2026-5-24-pm": "Bro Marseval",
+    "2026-5-24-am": "TSV",
+    "2026-5-27-pm": "Sis Joanna",
+    "2026-5-28-am": "Sis Jeunesse"
+  }
 }
