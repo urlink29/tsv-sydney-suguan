@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "Jun 22 to 28, 2026",
-    "storageKey": "tsv_sigs_jun22to282026_20260622180954",
+    "storageKey": "tsv_sigs_jun22to282026_20260623112118",
     "rows": [
       {
         "day": "Mon",
@@ -34,9 +34,8 @@
         "date": "24 Jun 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
+        "name": "Jacob Abinguna",
+        "id": "jacob-abinguna"
       },
       {
         "day": "Wed",
@@ -60,7 +59,7 @@
         "date": "24 Jun 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Marseval Abella",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -101,7 +100,7 @@
         "date": "27 Jun 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Joanna Abinguna",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -126,7 +125,7 @@
         "date": "28 Jun 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Jeunesse Beltran",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -421,7 +420,7 @@
         "time": "6:30 AM",
         "names": [
           "Dwight",
-          "TBA",
+          "Jacob",
           "HD Reserve"
         ]
       },
@@ -432,7 +431,7 @@
         "time": "8:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "Marseval",
           "Ronnie"
         ]
       },
@@ -461,7 +460,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Joanna",
           "Ronnie"
         ]
       },
@@ -472,7 +471,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Jeunesse",
           "Dwight"
         ]
       }
