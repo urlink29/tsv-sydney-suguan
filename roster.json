@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Jun 29 to Jul 05, 2026",
-    "storageKey": "tsv_sigs_jun29tojul052026_20260629170455",
+    "storageKey": "tsv_sigs_jun29tojul052026_20260629171428",
     "rows": [
       {
         "day": "Mon",
@@ -513,17 +513,6 @@
           "Jay",
           "TBA",
           "Robbie"
-        ]
-      },
-      {
-        "date": 30,
-        "month": 6,
-        "day": "Thu",
-        "time": "8:00 PM",
-        "names": [
-          "Jay",
-          "TBA",
-          "Arden"
         ]
       },
       {
