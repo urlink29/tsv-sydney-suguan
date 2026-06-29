@@ -1,6 +1,13 @@
 {
   "storageKey": "tsv_sigs_jun29tojul052026_20260629171900",
-  "sigs": {},
+  "sigs": {
+    "row_1": {
+      "data": "Jay Beltran",
+      "type": "type",
+      "ts": "29 June 2026, 05:24 pm",
+      "memberName": "Jay Beltran"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
