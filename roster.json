@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Jun 29 to Jul 05, 2026",
-    "storageKey": "tsv_sigs_jun29tojul052026_20260629165333",
+    "storageKey": "tsv_sigs_jun29tojul052026_20260629170455",
     "rows": [
       {
         "day": "Mon",
@@ -50,9 +50,9 @@
         "day": "Wed",
         "date": "01 Jul 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "duty": "TSV Admin",
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Wed",
@@ -67,9 +67,9 @@
         "day": "Wed",
         "date": "01 Jul 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "duty": "TSV Trainee",
+        "name": "Robbie Galvez",
+        "id": "robbie-galvez"
       },
       {
         "day": "Thu",
@@ -92,42 +92,25 @@
         "date": "04 Jul 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
-      },
-      {
-        "day": "Sat",
-        "date": "04 Jul 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Sat",
-        "date": "04 Jul 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "TSV Trainee",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
-        "day": "Sun",
-        "date": "05 Jul 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Bryan Catacutan",
-        "id": "bryan-catacutan"
-      },
-      {
-        "day": "Sun",
-        "date": "05 Jul 2026",
-        "time": "8:00 AM Worship Service",
+        "day": "Sat",
+        "date": "04 Jul 2026",
+        "time": "6:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
         "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Sat",
+        "date": "04 Jul 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "TSV Trainee",
+        "name": "Arden Galvez",
+        "id": "arden-galvez"
       },
       {
         "day": "Sun",
@@ -136,6 +119,23 @@
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
+      },
+      {
+        "day": "Sun",
+        "date": "05 Jul 2026",
+        "time": "8:00 AM Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Sun",
+        "date": "05 Jul 2026",
+        "time": "8:00 AM Worship Service",
+        "duty": "TSV Trainee",
+        "name": "Bryan Catacutan",
+        "id": "bryan-catacutan"
       }
     ],
     "officers": [
@@ -179,9 +179,9 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Jacob Abinguna",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Jacob"
         ]
       },
       {
@@ -190,9 +190,9 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Robbie Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Robbie"
         ]
       },
       {
@@ -219,9 +219,9 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Arden Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Arden"
         ]
       },
       {
@@ -230,9 +230,9 @@
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
-          "Bryan Catacutan",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Bryan"
         ]
       },
       {
@@ -259,9 +259,9 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Jacob Abinguna",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Jacob"
         ]
       },
       {
@@ -270,9 +270,9 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Robbie Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Robbie"
         ]
       },
       {
@@ -299,9 +299,9 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Karez Bartolo",
+          "Karez",
           "TBA",
-          "Ronnie Cunanan"
+          "Ronnie"
         ]
       },
       {
@@ -310,9 +310,9 @@
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
-          "Bryan Catacutan",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Bryan"
         ]
       },
       {
@@ -339,9 +339,9 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Jacob Abinguna",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Jacob"
         ]
       },
       {
@@ -350,9 +350,9 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Arden Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Arden"
         ]
       },
       {
@@ -379,9 +379,9 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Robbie Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Robbie"
         ]
       },
       {
@@ -390,9 +390,9 @@
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
-          "Bryan Catacutan",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Bryan"
         ]
       },
       {
@@ -419,9 +419,9 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Jacob Abinguna",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Jacob"
         ]
       },
       {
@@ -430,9 +430,9 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Arden Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Arden"
         ]
       },
       {
@@ -459,9 +459,9 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Karez Bartolo",
+          "Karez",
           "TBA",
-          "Ronnie Cunanan"
+          "Ronnie"
         ]
       },
       {
@@ -470,9 +470,9 @@
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
-          "Bryan Catacutan",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Bryan"
         ]
       },
       {
@@ -499,9 +499,9 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Jacob Abinguna",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Jacob"
         ]
       },
       {
@@ -510,9 +510,20 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Robbie Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Robbie"
+        ]
+      },
+      {
+        "date": 30,
+        "month": 6,
+        "day": "Thu",
+        "time": "8:00 PM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Arden"
         ]
       },
       {
@@ -539,9 +550,9 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Arden Galvez",
+          "Jay",
           "TBA",
-          "Jay Beltran"
+          "Arden"
         ]
       },
       {
@@ -550,9 +561,9 @@
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
-          "Bryan Catacutan",
+          "Dwight",
           "TBA",
-          "Dwight Alegros"
+          "Bryan"
         ]
       }
     ]
