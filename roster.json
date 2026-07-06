@@ -2,12 +2,12 @@
   "rosterType": "T1R",
   "monthType": "T2M",
   "roster": {
-    "weekLabel": "Jun 29 to Jul 05, 2026",
-    "storageKey": "tsv_sigs_jun29tojul052026_20260629171900",
+    "weekLabel": "Jul 06 to Jul 12, 2026",
+    "storageKey": "tsv_sigs_jul06tojul122026_20260706170313",
     "rows": [
       {
         "day": "Mon",
-        "date": "29 Jun 2026",
+        "date": "06 Jul 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +15,7 @@
       },
       {
         "day": "Tue",
-        "date": "30 Jun 2026",
+        "date": "07 Jul 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,7 +23,7 @@
       },
       {
         "day": "Wed",
-        "date": "01 Jul 2026",
+        "date": "08 Jul 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -31,7 +31,7 @@
       },
       {
         "day": "Wed",
-        "date": "01 Jul 2026",
+        "date": "08 Jul 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -40,7 +40,7 @@
       },
       {
         "day": "Wed",
-        "date": "01 Jul 2026",
+        "date": "08 Jul 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Trainee",
         "name": "Jacob Abinguna",
@@ -48,7 +48,7 @@
       },
       {
         "day": "Wed",
-        "date": "01 Jul 2026",
+        "date": "08 Jul 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -56,7 +56,7 @@
       },
       {
         "day": "Wed",
-        "date": "01 Jul 2026",
+        "date": "08 Jul 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -65,15 +65,15 @@
       },
       {
         "day": "Wed",
-        "date": "01 Jul 2026",
+        "date": "08 Jul 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Thu",
-        "date": "02 Jul 2026",
+        "date": "09 Jul 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -81,48 +81,48 @@
       },
       {
         "day": "Fri",
-        "date": "03 Jul 2026",
+        "date": "10 Jul 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
-        "name": "Ethan Au",
-        "id": "ethan-au"
+        "name": "Jonathan Au",
+        "id": "jonathan-au"
       },
       {
         "day": "Sat",
-        "date": "04 Jul 2026",
+        "date": "11 Jul 2026",
         "time": "6:00 PM Worship Service",
+        "duty": "TSV Admin",
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
+      },
+      {
+        "day": "Sat",
+        "date": "11 Jul 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Sat",
+        "date": "11 Jul 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Sun",
+        "date": "12 Jul 2026",
+        "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
-        "day": "Sat",
-        "date": "04 Jul 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Sat",
-        "date": "04 Jul 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
-      },
-      {
         "day": "Sun",
-        "date": "05 Jul 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
-      },
-      {
-        "day": "Sun",
-        "date": "05 Jul 2026",
+        "date": "12 Jul 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -131,7 +131,7 @@
       },
       {
         "day": "Sun",
-        "date": "05 Jul 2026",
+        "date": "12 Jul 2026",
         "time": "8:00 AM Worship Service",
         "duty": "TSV Trainee",
         "name": "Bryan Catacutan",
@@ -272,7 +272,7 @@
         "names": [
           "Jay",
           "TBA",
-          "Robbie"
+          "Ronnie"
         ]
       },
       {
@@ -432,7 +432,7 @@
         "names": [
           "Jay",
           "TBA",
-          "Arden"
+          "Ronnie"
         ]
       },
       {
