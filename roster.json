@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Jul 13 to Jul 19, 2026",
-    "storageKey": "tsv_sigs_jul13tojul192026_20260713130735",
+    "storageKey": "tsv_sigs_jul13tojul192026_20260713132239",
     "rows": [
       {
         "day": "Mon",
@@ -180,6 +180,14 @@
         "duty": "TSV Trainee",
         "name": "Bryan Catacutan",
         "id": "bryan-catacutan"
+      },
+      {
+        "day": "Sun",
+        "date": "19 Jul 2026",
+        "time": "PM - Panata",
+        "duty": "TSV Admin",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       }
     ],
     "officers": [
