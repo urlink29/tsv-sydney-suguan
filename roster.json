@@ -2,46 +2,44 @@
   "rosterType": "T2R",
   "monthType": "T2M",
   "roster": {
-    "weekLabel": "Jul 13 to Jul 19, 2026",
-    "storageKey": "tsv_sigs_jul13tojul192026_20260713132239",
+    "weekLabel": "Jul 20 to Jul 26, 2026",
+    "storageKey": "tsv_sigs_jul20tojul262026_20260720125107",
     "rows": [
       {
         "day": "Mon",
-        "date": "13 Jul 2026",
+        "date": "20 Jul 2026",
         "time": "AM - Panata",
         "duty": "TSV Admin",
-        "name": "Jonathan Au",
-        "id": "jonathan-au"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Mon",
-        "date": "13 Jul 2026",
+        "date": "20 Jul 2026",
         "time": "PM - Panata",
         "duty": "TSV Admin",
-        "name": "N/A",
-        "id": null,
-        "skip": "Not Required"
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Tue",
-        "date": "14 Jul 2026",
+        "date": "21 Jul 2026",
         "time": "AM - Panata",
         "duty": "TSV Admin",
-        "name": "Ethan Au",
-        "id": "ethan-au"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Tue",
-        "date": "14 Jul 2026",
+        "date": "21 Jul 2026",
         "time": "PM - Panata",
         "duty": "TSV Admin",
-        "name": "N/A",
-        "id": null,
-        "skip": "Not Required"
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
       },
       {
         "day": "Wed",
-        "date": "15 Jul 2026",
+        "date": "22 Jul 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -49,7 +47,7 @@
       },
       {
         "day": "Wed",
-        "date": "15 Jul 2026",
+        "date": "22 Jul 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -58,7 +56,7 @@
       },
       {
         "day": "Wed",
-        "date": "15 Jul 2026",
+        "date": "22 Jul 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Trainee",
         "name": "Jacob Abinguna",
@@ -66,7 +64,7 @@
       },
       {
         "day": "Wed",
-        "date": "15 Jul 2026",
+        "date": "22 Jul 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -74,7 +72,7 @@
       },
       {
         "day": "Wed",
-        "date": "15 Jul 2026",
+        "date": "22 Jul 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -83,91 +81,81 @@
       },
       {
         "day": "Wed",
-        "date": "15 Jul 2026",
+        "date": "22 Jul 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
+        "duty": "TSV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Thu",
-        "date": "16 Jul 2026",
+        "date": "23 Jul 2026",
         "time": "AM - Panata",
-        "duty": "TSV Admin",
-        "name": "Jonathan Au",
-        "id": "jonathan-au"
-      },
-      {
-        "day": "Thu",
-        "date": "16 Jul 2026",
-        "time": "PM - Panata",
-        "duty": "TSV Admin",
-        "name": "N/A",
-        "id": null,
-        "skip": "Not Required"
-      },
-      {
-        "day": "Fri",
-        "date": "17 Jul 2026",
-        "time": "AM - Panata",
-        "duty": "TSV Admin",
-        "name": "Ethan Au",
-        "id": "ethan-au"
-      },
-      {
-        "day": "Fri",
-        "date": "17 Jul 2026",
-        "time": "PM - Panata",
-        "duty": "TSV Admin",
-        "name": "N/A",
-        "id": null,
-        "skip": "Not Required"
-      },
-      {
-        "day": "Sat",
-        "date": "18 Jul 2026",
-        "time": "AM - Panata",
-        "duty": "TSV Admin",
-        "name": "Jonathan Au",
-        "id": "jonathan-au"
-      },
-      {
-        "day": "Sat",
-        "date": "18 Jul 2026",
-        "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
-        "day": "Sat",
-        "date": "18 Jul 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
+        "day": "Thu",
+        "date": "23 Jul 2026",
+        "time": "PM - Panata",
+        "duty": "TSV Admin",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
-        "day": "Sat",
-        "date": "18 Jul 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
-      },
-      {
-        "day": "Sun",
-        "date": "19 Jul 2026",
-        "time": "8:00 AM Worship Service",
+        "day": "Fri",
+        "date": "24 Jul 2026",
+        "time": "AM - Panata",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
       },
       {
+        "day": "Fri",
+        "date": "24 Jul 2026",
+        "time": "PM - Panata",
+        "duty": "TSV Admin",
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
+      },
+      {
+        "day": "Sat",
+        "date": "25 Jul 2026",
+        "time": "6:00 PM Anniversary Thanksgiving",
+        "duty": "TSV Admin",
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
+      },
+      {
+        "day": "Sat",
+        "date": "25 Jul 2026",
+        "time": "6:00 PM Anniversary Thanksgiving",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Sat",
+        "date": "25 Jul 2026",
+        "time": "6:00 PM Anniversary Thanksgiving",
+        "duty": "TSV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
         "day": "Sun",
-        "date": "19 Jul 2026",
-        "time": "8:00 AM Worship Service",
+        "date": "26 Jul 2026",
+        "time": "8:00 AM Anniversary Thanksgiving",
+        "duty": "TSV Admin",
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
+      },
+      {
+        "day": "Sun",
+        "date": "26 Jul 2026",
+        "time": "8:00 AM Anniversary Thanksgiving",
         "duty": "HVO",
         "name": "TBA",
         "id": null,
@@ -175,19 +163,11 @@
       },
       {
         "day": "Sun",
-        "date": "19 Jul 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Bryan Catacutan",
-        "id": "bryan-catacutan"
-      },
-      {
-        "day": "Sun",
-        "date": "19 Jul 2026",
-        "time": "PM - Panata",
-        "duty": "TSV Admin",
-        "name": "Ronnie Cunanan",
-        "id": "ronnie-cunanan"
+        "date": "26 Jul 2026",
+        "time": "8:00 AM Anniversary Thanksgiving",
+        "duty": "TSV Monitor",
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       }
     ],
     "officers": [
@@ -525,7 +505,7 @@
         "day": "Tue",
         "time": "AM - Panata",
         "names": [
-          "Jay"
+          "Dwight"
         ]
       },
       {
@@ -534,7 +514,7 @@
         "day": "Tue",
         "time": "PM - Panata",
         "names": [
-          "Ronnie"
+          "Karez"
         ]
       },
       {
@@ -583,7 +563,7 @@
         "day": "Fri",
         "time": "AM - Panata",
         "names": [
-          "Jay"
+          "Dwight"
         ]
       },
       {
@@ -592,7 +572,7 @@
         "day": "Fri",
         "time": "PM - Panata",
         "names": [
-          "Ronnie"
+          "Karez"
         ]
       },
       {
