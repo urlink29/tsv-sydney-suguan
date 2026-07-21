@@ -3,7 +3,7 @@
   "monthType": "T2M",
   "roster": {
     "weekLabel": "Jul 20 to Jul 26, 2026",
-    "storageKey": "tsv_sigs_jul20tojul262026_20260720125107",
+    "storageKey": "tsv_sigs_jul20tojul262026_20260721105220",
     "rows": [
       {
         "day": "Mon",
@@ -34,8 +34,8 @@
         "date": "21 Jul 2026",
         "time": "PM - Panata",
         "duty": "TSV Admin",
-        "name": "Karez Bartolo",
-        "id": "karez-bartolo"
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Wed",
@@ -514,7 +514,7 @@
         "day": "Tue",
         "time": "PM - Panata",
         "names": [
-          "Karez"
+          "Ronnie"
         ]
       },
       {
