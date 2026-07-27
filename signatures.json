@@ -86,6 +86,14 @@
       "memberName": "Jacob Abinguna"
     }
   },
-  "leaveRequests": {},
+  "leaveRequests": {
+    "dwight-alegros_1785111038745": {
+      "requestKey": "dwight-alegros_1785111038745",
+      "name": "Dwight Alegros",
+      "from": "04 Aug 2026",
+      "to": "05 Aug 2026",
+      "requestedBy": "Dwight Alegros"
+    }
+  },
   "hvoAssignments": {}
 }
