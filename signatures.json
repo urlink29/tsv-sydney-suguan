@@ -1,25 +1,6 @@
 {
-  "storageKey": "tsv_sigs_jul27toaug022026_20260727144623",
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "27 July 2026, 02:52 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_5": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "27 July 2026, 02:52 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_10": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "27 July 2026, 02:52 pm",
-      "memberName": "Jay Beltran"
-    }
-  },
+  "storageKey": "tsv_sigs_jul27toaug022026_20260727180156",
+  "sigs": {},
   "leaveRequests": {},
   "hvoAssignments": {}
 }
