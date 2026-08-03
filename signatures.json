@@ -1,6 +1,13 @@
 {
   "storageKey": "tsv_sigs_aug03toaug092026_20260803141008",
-  "sigs": {},
+  "sigs": {
+    "row_8": {
+      "data": "Dwight Alegros",
+      "type": "type",
+      "ts": "03 Aug 2026 at 03:09 pm",
+      "memberName": "Dwight Alegros"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
