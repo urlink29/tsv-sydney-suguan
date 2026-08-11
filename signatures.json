@@ -1,37 +1,6 @@
 {
-  "storageKey": "tsv_sigs_aug10toaug162026_20260810142637",
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "10 Aug 2026, 02:32 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_5": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "10 Aug 2026, 02:32 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_10": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "10 Aug 2026, 02:32 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_12": {
-      "data": "Arden Galvez",
-      "type": "type",
-      "ts": "10 Aug 2026, 02:34 pm",
-      "memberName": "Arden Galvez"
-    },
-    "row_0": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "11 Aug 2026 at 11:38 am",
-      "memberName": "Ronnie Cunanan"
-    }
-  },
+  "storageKey": "tsv_sigs_aug03toaug092026_20260803141008",
+  "sigs": {},
   "leaveRequests": {},
   "hvoAssignments": {}
 }
