@@ -2,12 +2,12 @@
   "rosterType": "T1R",
   "monthType": "T1M",
   "roster": {
-    "weekLabel": "Aug 10 to Aug 16, 2026",
-    "storageKey": "tsv_sigs_aug10toaug162026_20260810142637",
+    "weekLabel": "Aug 17 to Aug 23, 2026",
+    "storageKey": "tsv_sigs_aug17toaug232026_20260817134214",
     "rows": [
       {
         "day": "Mon",
-        "date": "10 Aug 2026",
+        "date": "17 Aug 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +15,7 @@
       },
       {
         "day": "Tue",
-        "date": "11 Aug 2026",
+        "date": "18 Aug 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,24 +23,24 @@
       },
       {
         "day": "Wed",
-        "date": "12 Aug 2026",
+        "date": "19 Aug 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       },
       {
         "day": "Wed",
-        "date": "12 Aug 2026",
+        "date": "19 Aug 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "AJ Corona",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "12 Aug 2026",
+        "date": "19 Aug 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Trainee",
         "name": "Jacob Abinguna",
@@ -48,32 +48,32 @@
       },
       {
         "day": "Wed",
-        "date": "12 Aug 2026",
+        "date": "19 Aug 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Wed",
-        "date": "12 Aug 2026",
+        "date": "19 Aug 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Paul Ramayrat",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "12 Aug 2026",
+        "date": "19 Aug 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "duty": "TSV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Thu",
-        "date": "13 Aug 2026",
+        "date": "20 Aug 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -81,7 +81,7 @@
       },
       {
         "day": "Fri",
-        "date": "14 Aug 2026",
+        "date": "21 Aug 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jonathan Au",
@@ -89,53 +89,53 @@
       },
       {
         "day": "Sat",
-        "date": "15 Aug 2026",
+        "date": "22 Aug 2026",
         "time": "6:00 PM Worship Service",
+        "duty": "TSV Admin",
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
+      },
+      {
+        "day": "Sat",
+        "date": "22 Aug 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "HVO",
+        "name": "Ciara Ronquillo",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Sat",
+        "date": "22 Aug 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "TSV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Sun",
+        "date": "23 Aug 2026",
+        "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
-        "day": "Sat",
-        "date": "15 Aug 2026",
-        "time": "6:00 PM Worship Service",
+        "day": "Sun",
+        "date": "23 Aug 2026",
+        "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Jeunesse Beltran",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
-        "day": "Sat",
-        "date": "15 Aug 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
-      },
-      {
         "day": "Sun",
-        "date": "16 Aug 2026",
+        "date": "23 Aug 2026",
         "time": "8:00 AM Worship Service",
-        "duty": "TSV Admin",
+        "duty": "TSV Monitor",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
-      },
-      {
-        "day": "Sun",
-        "date": "16 Aug 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Sun",
-        "date": "16 Aug 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Bryan Catacutan",
-        "id": "bryan-catacutan"
       }
     ],
     "officers": [
@@ -339,8 +339,8 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Dwight",
-          "TBA",
+          "Jay",
+          "AJ",
           "Jacob"
         ]
       },
@@ -350,8 +350,8 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Jay",
-          "TBA",
+          "Dwight",
+          "Paul",
           "Ronnie"
         ]
       },
@@ -380,7 +380,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Ciara",
           "Ronnie"
         ]
       },
@@ -391,8 +391,8 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
-          "Bryan"
+          "Jeunesse",
+          "Dwight"
         ]
       },
       {
@@ -419,7 +419,7 @@
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Dwight",
+          "Jay",
           "TBA",
           "Jacob"
         ]
@@ -430,7 +430,7 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Jay",
+          "Dwight",
           "TBA",
           "Robbie"
         ]
