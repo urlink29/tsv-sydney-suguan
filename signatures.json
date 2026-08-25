@@ -1,6 +1,13 @@
 {
   "storageKey": "tsv_sigs_aug24toaug302026_20260825131856",
-  "sigs": {},
+  "sigs": {
+    "row_7": {
+      "data": "Robbie Galvez",
+      "type": "type",
+      "ts": "26 Aug 2026 at 02:13 am",
+      "memberName": "Robbie Galvez"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
