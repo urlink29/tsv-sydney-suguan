@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "Aug 24 to Aug 30, 2026",
-    "storageKey": "tsv_sigs_aug24toaug302026_20260824151837",
+    "storageKey": "tsv_sigs_aug24toaug302026_20260825131856",
     "rows": [
       {
         "day": "Mon",
@@ -34,7 +34,7 @@
         "date": "26 Aug 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Neus Baquir",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -59,7 +59,7 @@
         "date": "26 Aug 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Leinad Diaz",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -100,9 +100,8 @@
         "date": "29 Aug 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
+        "name": "Jerick Dadios",
+        "id": "jerick-dadios"
       },
       {
         "day": "Sat",
@@ -125,7 +124,7 @@
         "date": "30 Aug 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Angelo Sanchez",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -420,7 +419,7 @@
         "time": "6:30 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Neus",
           "Jacob"
         ]
       },
@@ -431,7 +430,7 @@
         "time": "8:00 PM",
         "names": [
           "Dwight",
-          "TBA",
+          "Leinad",
           "Robbie"
         ]
       },
@@ -460,7 +459,7 @@
         "time": "6:00 PM",
         "names": [
           "Jay",
-          "TBA",
+          "Jerick",
           "Arden"
         ]
       },
@@ -471,7 +470,7 @@
         "time": "8:00 AM",
         "names": [
           "Dwight",
-          "TBA",
+          "Angelo",
           "Bryan"
         ]
       }
