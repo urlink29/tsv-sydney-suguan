@@ -1,6 +1,13 @@
 {
   "storageKey": "tsv_sigs_aug24toaug302026_20260825131856",
-  "sigs": {},
+  "sigs": {
+    "row_0": {
+      "data": "Ronnie Cunanan",
+      "type": "type",
+      "ts": "25 Aug 2026, 01:22 pm",
+      "memberName": "__admin__"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
