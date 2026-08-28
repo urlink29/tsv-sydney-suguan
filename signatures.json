@@ -1,6 +1,13 @@
 {
   "storageKey": "tsv_sigs_aug24toaug302026_20260825131856",
-  "sigs": {},
+  "sigs": {
+    "row_12": {
+      "data": "Arden Galvez",
+      "type": "type",
+      "ts": "29 Aug 2026, 09:39 am",
+      "memberName": "Arden Galvez"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
