@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "Aug 31 to Sep 06, 2026",
-    "storageKey": "tsv_sigs_aug31tosep062026_20260831131724",
+    "storageKey": "tsv_sigs_aug31tosep062026_20260901150537",
     "rows": [
       {
         "day": "Mon",
@@ -34,7 +34,7 @@
         "date": "02 Sep 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Arien Maduli",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -60,7 +60,7 @@
         "date": "02 Sep 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Daniel Anunciacion",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -101,7 +101,7 @@
         "date": "05 Sep 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Elle Valle",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -126,7 +126,7 @@
         "date": "06 Sep 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Lovenja Beltran",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -181,7 +181,7 @@
         "time": "6:30 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Arien",
           "HD Reserve"
         ]
       },
@@ -192,7 +192,7 @@
         "time": "8:00 PM",
         "names": [
           "Dwight",
-          "TBA",
+          "Daniel",
           "Ronnie"
         ]
       },
@@ -221,7 +221,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Elle",
           "Ronnie"
         ]
       },
@@ -232,7 +232,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Lovenja",
           "Dwight"
         ]
       },
