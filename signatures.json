@@ -66,6 +66,12 @@
       "type": "type",
       "ts": "07 Sept 2026, 01:20 pm",
       "memberName": "__admin__"
+    },
+    "officer_0": {
+      "data": "Jonathan Au",
+      "type": "type",
+      "ts": "07 Sept 2026, 01:20 pm",
+      "memberName": "__admin__"
     }
   },
   "leaveRequests": {},
