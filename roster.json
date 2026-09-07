@@ -3,7 +3,7 @@
   "monthType": "T1M",
   "roster": {
     "weekLabel": "Sep 07 to Sep 13, 2026",
-    "storageKey": "tsv_sigs_sep07tosep132026_20260907132653",
+    "storageKey": "tsv_sigs_sep07tosep132026_20260907133111",
     "rows": [
       {
         "day": "Mon",
@@ -117,8 +117,8 @@
         "date": "13 Sep 2026",
         "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Sun",
