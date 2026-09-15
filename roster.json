@@ -1,13 +1,14 @@
 {
   "rosterType": "T1R",
   "monthType": "T1M",
+  "resetSigs": true,
   "roster": {
-    "weekLabel": "Sep 07 to Sep 13, 2026",
-    "storageKey": "tsv_sigs_sep07tosep132026_20260907133111",
+    "weekLabel": "Sep 14 to Sep 20, 2026",
+    "storageKey": "tsv_sigs_sep14tosep202026",
     "rows": [
       {
         "day": "Mon",
-        "date": "07 Sep 2026",
+        "date": "14 Sep 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -15,7 +16,7 @@
       },
       {
         "day": "Tue",
-        "date": "08 Sep 2026",
+        "date": "15 Sep 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -23,7 +24,7 @@
       },
       {
         "day": "Wed",
-        "date": "09 Sep 2026",
+        "date": "16 Sep 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -31,24 +32,25 @@
       },
       {
         "day": "Wed",
-        "date": "09 Sep 2026",
+        "date": "16 Sep 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Neus Baquir",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "09 Sep 2026",
+        "date": "16 Sep 2026",
         "time": "6:30 AM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Jacob Abinguna",
-        "id": "jacob-abinguna"
+        "duty": "AV Monitor",
+        "name": "HD Reserve",
+        "id": null,
+        "skip": "Not Requied"
       },
       {
         "day": "Wed",
-        "date": "09 Sep 2026",
+        "date": "16 Sep 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -56,24 +58,24 @@
       },
       {
         "day": "Wed",
-        "date": "09 Sep 2026",
+        "date": "16 Sep 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Franz Dela Pena",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "09 Sep 2026",
+        "date": "16 Sep 2026",
         "time": "8:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
       },
       {
         "day": "Thu",
-        "date": "10 Sep 2026",
+        "date": "17 Sep 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -81,7 +83,7 @@
       },
       {
         "day": "Fri",
-        "date": "11 Sep 2026",
+        "date": "18 Sep 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jonathan Au",
@@ -89,53 +91,52 @@
       },
       {
         "day": "Sat",
-        "date": "12 Sep 2026",
+        "date": "19 Sep 2026",
         "time": "6:00 PM Worship Service",
+        "duty": "TSV Admin",
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
+      },
+      {
+        "day": "Sat",
+        "date": "19 Sep 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "HVO",
+        "name": "Reese Dela Cruz",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Sat",
+        "date": "19 Sep 2026",
+        "time": "6:00 PM Worship Service",
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Sun",
+        "date": "20 Sep 2026",
+        "time": "8:00 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
-        "day": "Sat",
-        "date": "12 Sep 2026",
-        "time": "6:00 PM Worship Service",
+        "day": "Sun",
+        "date": "20 Sep 2026",
+        "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Sat",
-        "date": "12 Sep 2026",
-        "time": "6:00 PM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
+        "name": "Ethan Au",
+        "id": "ethan-au"
       },
       {
         "day": "Sun",
-        "date": "13 Sep 2026",
+        "date": "20 Sep 2026",
         "time": "8:00 AM Worship Service",
-        "duty": "TSV Admin",
+        "duty": "AV Monitor",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
-      },
-      {
-        "day": "Sun",
-        "date": "13 Sep 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "HVO",
-        "name": "TBA",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Sun",
-        "date": "13 Sep 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Trainee",
-        "name": "Bryan Catacutan",
-        "id": "bryan-catacutan"
       }
     ],
     "officers": [
@@ -340,7 +341,7 @@
         "time": "6:30 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Neus",
           "HD Reserve"
         ]
       },
@@ -351,7 +352,7 @@
         "time": "8:00 PM",
         "names": [
           "Dwight",
-          "TBA",
+          "Franz",
           "Ronnie"
         ]
       },
@@ -380,7 +381,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Reese",
           "Ronnie"
         ]
       },
@@ -391,7 +392,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Ethan",
           "Dwight"
         ]
       },
