@@ -1,7 +1,7 @@
 {
   "rosterType": "T1R",
   "monthType": "T1M",
-  "resetSigs": true,
+  "resetToken": "20260915140608",
   "roster": {
     "weekLabel": "Sep 14 to Sep 20, 2026",
     "storageKey": "tsv_sigs_sep14tosep202026",
