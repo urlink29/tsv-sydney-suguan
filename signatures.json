@@ -1,7 +1,14 @@
 {
   "storageKey": "tsv_sigs_sep14tosep202026",
   "resetToken": null,
-  "sigs": {},
+  "sigs": {
+    "row_15": {
+      "data": "Bryan Catacutan",
+      "type": "type",
+      "ts": "18 Sep 2026 at 08:43 pm",
+      "memberName": "Bryan Catacutan"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
