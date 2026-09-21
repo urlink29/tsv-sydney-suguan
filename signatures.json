@@ -1,7 +1,14 @@
 {
   "storageKey": "tsv_sigs_sep21tosep272026",
   "resetToken": null,
-  "sigs": {},
+  "sigs": {
+    "row_1": {
+      "data": "Jay Beltran",
+      "type": "type",
+      "ts": "21 Sept 2026, 06:53 pm",
+      "memberName": "Jay Beltran"
+    }
+  },
   "leaveRequests": {},
   "hvoAssignments": {}
 }
