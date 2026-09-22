@@ -1,56 +1,6 @@
 {
-  "storageKey": "tsv_sigs_sep21tosep272026",
-  "resetToken": null,
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:53 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_4": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:53 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_12": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:53 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_0": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:54 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_7": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:54 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_8": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:54 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_15": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "21 Sept 2026, 06:54 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_13": {
-      "data": "Bryan Catacutan",
-      "type": "type",
-      "ts": "22 Sep 2026 at 07:25 pm",
-      "memberName": "Bryan Catacutan"
-    }
-  },
+  "storageKey": "tsv_sigs_sep07tosep132026_20260907133111",
+  "sigs": {},
   "leaveRequests": {},
   "hvoAssignments": {}
 }
