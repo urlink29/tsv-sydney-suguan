@@ -35,7 +35,7 @@
         "date": "23 Sep 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Arien Maduli",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -52,15 +52,15 @@
         "date": "23 Sep 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "name": "Arden Galvez",
+        "id": "arden-galvez"
       },
       {
         "day": "Wed",
         "date": "23 Sep 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Jerick Dadios",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -93,15 +93,15 @@
         "date": "26 Sep 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
+        "name": "Robbie Galvez",
+        "id": "robbie-galvez"
       },
       {
         "day": "Sat",
         "date": "26 Sep 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Angelo Sanchez",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -126,7 +126,7 @@
         "date": "27 Sep 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Daniel Anunciacion",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -421,7 +421,7 @@
         "time": "6:30 AM",
         "names": [
           "Jacob",
-          "TBA",
+          "Arien",
           "Jay"
         ]
       },
@@ -431,8 +431,8 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Robbie",
-          "TBA",
+          "Arden",
+          "Jerick",
           "Dwight"
         ]
       },
@@ -460,8 +460,8 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Arden",
-          "TBA",
+          "Robbie",
+          "Angelo",
           "Jay"
         ]
       },
@@ -472,7 +472,7 @@
         "time": "8:00 AM",
         "names": [
           "Bryan",
-          "TBA",
+          "Daniel",
           "Dwight"
         ]
       }
