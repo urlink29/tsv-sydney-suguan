@@ -1,6 +1,5 @@
 {
   "storageKey": "tsv_sigs_sep21tosep272026",
-  "resetToken": null,
   "sigs": {
     "row_0": {
       "data": "Ronnie Cunanan",
@@ -55,6 +54,12 @@
       "type": "type",
       "ts": "24 Sept 2026, 11:12 am",
       "memberName": "Arden Galvez"
+    },
+    "row_10": {
+      "data": "Robbie Galvez",
+      "type": "type",
+      "ts": "26 Sep 2026 at 03:17 pm",
+      "memberName": "Robbie Galvez"
     }
   },
   "leaveRequests": {},
