@@ -1,14 +1,14 @@
 {
   "rosterType": "T1R",
-  "monthType": "T1M",
-  "resetToken": null,
+  "monthType": "T2M",
+  "resetToken": "20260928191903",
   "roster": {
-    "weekLabel": "Sep 21 to Sep 27, 2026",
-    "storageKey": "tsv_sigs_sep21tosep272026",
+    "weekLabel": "Sep 28 to Oct 04, 2026",
+    "storageKey": "tsv_sigs_sep28tooct042026",
     "rows": [
       {
         "day": "Mon",
-        "date": "21 Sep 2026",
+        "date": "28 Sep 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -16,7 +16,7 @@
       },
       {
         "day": "Tue",
-        "date": "22 Sep 2026",
+        "date": "29 Sep 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -24,57 +24,58 @@
       },
       {
         "day": "Wed",
-        "date": "23 Sep 2026",
+        "date": "30 Sep 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
-        "name": "Jacob Abinguna",
-        "id": "jacob-abinguna"
-      },
-      {
-        "day": "Wed",
-        "date": "23 Sep 2026",
-        "time": "6:30 AM Worship Service",
-        "duty": "HVO",
-        "name": "Arien Maduli",
-        "id": null,
-        "skip": "Pre-Assigned"
-      },
-      {
-        "day": "Wed",
-        "date": "23 Sep 2026",
-        "time": "6:30 AM Worship Service",
-        "duty": "AV Monitor",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
         "day": "Wed",
-        "date": "23 Sep 2026",
-        "time": "8:00 PM Worship Service",
-        "duty": "TSV Admin",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
-      },
-      {
-        "day": "Wed",
-        "date": "23 Sep 2026",
-        "time": "8:00 PM Worship Service",
+        "date": "30 Sep 2026",
+        "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "Jerick Dadios",
+        "name": "TBA",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Wed",
-        "date": "23 Sep 2026",
-        "time": "8:00 PM Worship Service",
+        "date": "30 Sep 2026",
+        "time": "6:30 AM Worship Service",
         "duty": "AV Monitor",
+        "name": "HD Reserved",
+        "id": null,
+        "skip": "Not Required"
+      },
+      {
+        "day": "Wed",
+        "date": "30 Sep 2026",
+        "time": "8:00 PM Worship Service",
+        "duty": "TSV Admin",
         "name": "Dwight Alegros",
         "id": "dwight-alegros"
       },
       {
+        "day": "Wed",
+        "date": "30 Sep 2026",
+        "time": "8:00 PM Worship Service",
+        "duty": "HVO",
+        "name": "TBA",
+        "id": null,
+        "skip": "Pre-Assigned"
+      },
+      {
+        "day": "Wed",
+        "date": "30 Sep 2026",
+        "time": "8:00 PM Worship Service",
+        "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
         "day": "Thu",
-        "date": "24 Sep 2026",
+        "date": "01 Oct 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -82,7 +83,7 @@
       },
       {
         "day": "Fri",
-        "date": "25 Sep 2026",
+        "date": "02 Oct 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jonathan Au",
@@ -90,49 +91,49 @@
       },
       {
         "day": "Sat",
-        "date": "26 Sep 2026",
+        "date": "03 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "name": "Karez Bartolo",
+        "id": "karez-bartolo"
       },
       {
         "day": "Sat",
-        "date": "26 Sep 2026",
+        "date": "03 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "Angelo Sanchez",
+        "name": "TBA",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sat",
-        "date": "26 Sep 2026",
+        "date": "03 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
+        "name": "Ronnie Cunanan",
+        "id": "ronnie-cunanan"
+      },
+      {
+        "day": "Sun",
+        "date": "04 Oct 2026",
+        "time": "8:00 AM Worship Service",
+        "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
         "day": "Sun",
-        "date": "27 Sep 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Admin",
-        "name": "Bryan Catacutan",
-        "id": "bryan-catacutan"
-      },
-      {
-        "day": "Sun",
-        "date": "27 Sep 2026",
+        "date": "04 Oct 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "Daniel Anunciacion",
+        "name": "TBA",
         "id": null,
         "skip": "Pre-Assigned"
       },
       {
         "day": "Sun",
-        "date": "27 Sep 2026",
+        "date": "04 Oct 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
         "name": "Dwight Alegros",
@@ -153,52 +154,52 @@
     ]
   },
   "monthly": {
-    "month": "Aug 31 to Sep 27, 2026",
-    "monthType": "T1M",
+    "month": "Sep 28 to Nov 01, 2026",
+    "monthType": "T2M",
     "entries": [
       {
-        "date": 31,
-        "month": 7,
+        "date": 28,
+        "month": 8,
         "day": "Mon",
         "time": "Any Activity",
         "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 29,
+        "month": 8,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 30,
+        "month": 8,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 30,
+        "month": 8,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Dwight",
+          "TBA",
           "Ronnie"
         ]
       },
       {
         "date": 1,
-        "month": 8,
-        "day": "Tue",
-        "time": "Any Activity",
-        "names": [
-          "Jay"
-        ]
-      },
-      {
-        "date": 2,
-        "month": 8,
-        "day": "Wed",
-        "time": "6:30 AM",
-        "names": [
-          "Jay",
-          "Arien",
-          "HD Reserve"
-        ]
-      },
-      {
-        "date": 2,
-        "month": 8,
-        "day": "Wed",
-        "time": "8:00 PM",
-        "names": [
-          "Dwight",
-          "Daniel",
-          "Ronnie"
-        ]
-      },
-      {
-        "date": 3,
-        "month": 8,
+        "month": 9,
         "day": "Thu",
         "time": "Any Activity",
         "names": [
@@ -206,8 +207,8 @@
         ]
       },
       {
-        "date": 4,
-        "month": 8,
+        "date": 2,
+        "month": 9,
         "day": "Fri",
         "time": "Any Activity",
         "names": [
@@ -215,39 +216,39 @@
         ]
       },
       {
-        "date": 5,
-        "month": 8,
+        "date": 3,
+        "month": 9,
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "Elle",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 4,
+        "month": 9,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Jay",
+          "TBA",
+          "Dwight"
+        ]
+      },
+      {
+        "date": 5,
+        "month": 9,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
           "Ronnie"
         ]
       },
       {
         "date": 6,
-        "month": 8,
-        "day": "Sun",
-        "time": "8:00 AM",
-        "names": [
-          "Jay",
-          "Lovenja",
-          "Dwight"
-        ]
-      },
-      {
-        "date": 7,
-        "month": 8,
-        "day": "Mon",
-        "time": "Any Activity",
-        "names": [
-          "Ronnie"
-        ]
-      },
-      {
-        "date": 8,
-        "month": 8,
+        "month": 9,
         "day": "Tue",
         "time": "Any Activity",
         "names": [
@@ -255,30 +256,30 @@
         ]
       },
       {
-        "date": 9,
-        "month": 8,
+        "date": 7,
+        "month": 9,
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
           "Jay",
           "TBA",
-          "Jacob"
+          "HD Reserve"
         ]
       },
       {
-        "date": 9,
-        "month": 8,
+        "date": 7,
+        "month": 9,
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Dwight",
+          "Robbie",
           "TBA",
-          "Robbie"
+          "Dwight"
         ]
       },
       {
-        "date": 10,
-        "month": 8,
+        "date": 8,
+        "month": 9,
         "day": "Thu",
         "time": "Any Activity",
         "names": [
@@ -286,8 +287,8 @@
         ]
       },
       {
-        "date": 11,
-        "month": 8,
+        "date": 9,
+        "month": 9,
         "day": "Fri",
         "time": "Any Activity",
         "names": [
@@ -295,70 +296,70 @@
         ]
       },
       {
-        "date": 12,
-        "month": 8,
+        "date": 10,
+        "month": 9,
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Jay",
+          "Arden",
           "TBA",
-          "Arden"
+          "Jay"
+        ]
+      },
+      {
+        "date": 11,
+        "month": 9,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Bryan",
+          "TBA",
+          "Dwight"
+        ]
+      },
+      {
+        "date": 12,
+        "month": 9,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
         ]
       },
       {
         "date": 13,
-        "month": 8,
-        "day": "Sun",
-        "time": "8:00 AM",
+        "month": 9,
+        "day": "Tue",
+        "time": "Any Activity",
         "names": [
-          "Dwight",
-          "TBA",
-          "Bryan"
+          "Jay"
         ]
       },
       {
         "date": 14,
-        "month": 8,
-        "day": "Mon",
-        "time": "Any Activity",
+        "month": 9,
+        "day": "Wed",
+        "time": "6:30 AM",
         "names": [
+          "Jay",
+          "TBA",
+          "HD Reserve"
+        ]
+      },
+      {
+        "date": 14,
+        "month": 9,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Dwight",
+          "TBA",
           "Ronnie"
         ]
       },
       {
         "date": 15,
-        "month": 8,
-        "day": "Tue",
-        "time": "Any Activity",
-        "names": [
-          "Jay"
-        ]
-      },
-      {
-        "date": 16,
-        "month": 8,
-        "day": "Wed",
-        "time": "6:30 AM",
-        "names": [
-          "Jay",
-          "Neus",
-          "HD Reserve"
-        ]
-      },
-      {
-        "date": 16,
-        "month": 8,
-        "day": "Wed",
-        "time": "8:00 PM",
-        "names": [
-          "Dwight",
-          "Franz",
-          "Ronnie"
-        ]
-      },
-      {
-        "date": 17,
-        "month": 8,
+        "month": 9,
         "day": "Thu",
         "time": "Any Activity",
         "names": [
@@ -366,8 +367,8 @@
         ]
       },
       {
-        "date": 18,
-        "month": 8,
+        "date": 16,
+        "month": 9,
         "day": "Fri",
         "time": "Any Activity",
         "names": [
@@ -375,30 +376,30 @@
         ]
       },
       {
-        "date": 19,
-        "month": 8,
+        "date": 17,
+        "month": 9,
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "Reese",
+          "TBA",
           "Ronnie"
         ]
       },
       {
-        "date": 20,
-        "month": 8,
+        "date": 18,
+        "month": 9,
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
-          "Jay",
-          "Ethan",
-          "Bryan"
+          "Dwight",
+          "TBA",
+          "Jay"
         ]
       },
       {
-        "date": 21,
-        "month": 8,
+        "date": 19,
+        "month": 9,
         "day": "Mon",
         "time": "Any Activity",
         "names": [
@@ -406,8 +407,8 @@
         ]
       },
       {
-        "date": 22,
-        "month": 8,
+        "date": 20,
+        "month": 9,
         "day": "Tue",
         "time": "Any Activity",
         "names": [
@@ -415,30 +416,30 @@
         ]
       },
       {
-        "date": 23,
-        "month": 8,
+        "date": 21,
+        "month": 9,
         "day": "Wed",
         "time": "6:30 AM",
         "names": [
-          "Jacob",
-          "Arien",
-          "Jay"
+          "Jay",
+          "TBA",
+          "HD Reserve"
         ]
       },
       {
-        "date": 23,
-        "month": 8,
+        "date": 21,
+        "month": 9,
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Arden",
-          "Jerick",
+          "Robbie",
+          "TBA",
           "Dwight"
         ]
       },
       {
-        "date": 24,
-        "month": 8,
+        "date": 22,
+        "month": 9,
         "day": "Thu",
         "time": "Any Activity",
         "names": [
@@ -446,8 +447,8 @@
         ]
       },
       {
-        "date": 25,
-        "month": 8,
+        "date": 23,
+        "month": 9,
         "day": "Fri",
         "time": "Any Activity",
         "names": [
@@ -455,25 +456,105 @@
         ]
       },
       {
-        "date": 26,
-        "month": 8,
+        "date": 24,
+        "month": 9,
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Robbie",
-          "Angelo",
+          "Arden",
+          "TBA",
           "Jay"
         ]
       },
       {
-        "date": 27,
-        "month": 8,
+        "date": 25,
+        "month": 9,
         "day": "Sun",
         "time": "8:00 AM",
         "names": [
           "Bryan",
-          "Daniel",
+          "TBA",
           "Dwight"
+        ]
+      },
+      {
+        "date": 26,
+        "month": 9,
+        "day": "Mon",
+        "time": "Any Activity",
+        "names": [
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 27,
+        "month": 9,
+        "day": "Tue",
+        "time": "Any Activity",
+        "names": [
+          "Jay"
+        ]
+      },
+      {
+        "date": 28,
+        "month": 9,
+        "day": "Wed",
+        "time": "6:30 AM",
+        "names": [
+          "Jacob",
+          "TBA",
+          "Jay"
+        ]
+      },
+      {
+        "date": 28,
+        "month": 9,
+        "day": "Wed",
+        "time": "8:00 PM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 29,
+        "month": 9,
+        "day": "Thu",
+        "time": "Any Activity",
+        "names": [
+          "Dwight"
+        ]
+      },
+      {
+        "date": 30,
+        "month": 9,
+        "day": "Fri",
+        "time": "Any Activity",
+        "names": [
+          "Jonathan"
+        ]
+      },
+      {
+        "date": 31,
+        "month": 9,
+        "day": "Sat",
+        "time": "6:00 PM",
+        "names": [
+          "Karez",
+          "TBA",
+          "Ronnie"
+        ]
+      },
+      {
+        "date": 1,
+        "month": 10,
+        "day": "Sun",
+        "time": "8:00 AM",
+        "names": [
+          "Dwight",
+          "TBA",
+          "Jay"
         ]
       }
     ]
@@ -622,5 +703,11 @@
     "Leadership": "071914",
     "Choir Leaders": "071914"
   },
-  "onLeave": []
+  "onLeave": [
+    {
+      "name": "Jacob Abinguna",
+      "from": "27 Sep 2026",
+      "to": "25 Oct 2026"
+    }
+  ]
 }
