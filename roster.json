@@ -1,14 +1,14 @@
 {
   "rosterType": "T1R",
   "monthType": "T2M",
-  "resetToken": "20260928191903",
+  "resetToken": "20261006124235",
   "roster": {
-    "weekLabel": "Sep 28 to Oct 04, 2026",
-    "storageKey": "tsv_sigs_sep28tooct042026",
+    "weekLabel": "Oct 05 to Oct 11, 2026",
+    "storageKey": "tsv_sigs_oct05tooct112026",
     "rows": [
       {
         "day": "Mon",
-        "date": "28 Sep 2026",
+        "date": "05 Oct 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Ronnie Cunanan",
@@ -16,7 +16,7 @@
       },
       {
         "day": "Tue",
-        "date": "29 Sep 2026",
+        "date": "06 Oct 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -24,7 +24,7 @@
       },
       {
         "day": "Wed",
-        "date": "30 Sep 2026",
+        "date": "07 Oct 2026",
         "time": "6:30 AM Worship Service",
         "duty": "TSV Admin",
         "name": "Jay Beltran",
@@ -32,7 +32,7 @@
       },
       {
         "day": "Wed",
-        "date": "30 Sep 2026",
+        "date": "07 Oct 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -41,7 +41,7 @@
       },
       {
         "day": "Wed",
-        "date": "30 Sep 2026",
+        "date": "07 Oct 2026",
         "time": "6:30 AM Worship Service",
         "duty": "AV Monitor",
         "name": "HD Reserved",
@@ -50,15 +50,15 @@
       },
       {
         "day": "Wed",
-        "date": "30 Sep 2026",
+        "date": "07 Oct 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Robbie Galvez",
+        "id": "robbie-galvez"
       },
       {
         "day": "Wed",
-        "date": "30 Sep 2026",
+        "date": "07 Oct 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -67,15 +67,15 @@
       },
       {
         "day": "Wed",
-        "date": "30 Sep 2026",
+        "date": "07 Oct 2026",
         "time": "8:00 PM Worship Service",
         "duty": "AV Monitor",
-        "name": "Ronnie Cunanan",
-        "id": "ronnie-cunanan"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Thu",
-        "date": "01 Oct 2026",
+        "date": "08 Oct 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Dwight Alegros",
@@ -83,7 +83,7 @@
       },
       {
         "day": "Fri",
-        "date": "02 Oct 2026",
+        "date": "09 Oct 2026",
         "time": "PM - Any Activity",
         "duty": "TSV Admin",
         "name": "Jonathan Au",
@@ -91,15 +91,15 @@
       },
       {
         "day": "Sat",
-        "date": "03 Oct 2026",
+        "date": "10 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Karez Bartolo",
-        "id": "karez-bartolo"
+        "name": "Arden Galvez",
+        "id": "arden-galvez"
       },
       {
         "day": "Sat",
-        "date": "03 Oct 2026",
+        "date": "10 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -108,23 +108,23 @@
       },
       {
         "day": "Sat",
-        "date": "03 Oct 2026",
+        "date": "10 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
-        "name": "Ronnie Cunanan",
-        "id": "ronnie-cunanan"
-      },
-      {
-        "day": "Sun",
-        "date": "04 Oct 2026",
-        "time": "8:00 AM Worship Service",
-        "duty": "TSV Admin",
         "name": "Jay Beltran",
         "id": "jay-beltran"
       },
       {
         "day": "Sun",
-        "date": "04 Oct 2026",
+        "date": "11 Oct 2026",
+        "time": "8:00 AM Worship Service",
+        "duty": "TSV Admin",
+        "name": "Bryan Catacutan",
+        "id": "bryan-catacutan"
+      },
+      {
+        "day": "Sun",
+        "date": "11 Oct 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
         "name": "TBA",
@@ -133,7 +133,7 @@
       },
       {
         "day": "Sun",
-        "date": "04 Oct 2026",
+        "date": "11 Oct 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
         "name": "Dwight Alegros",
@@ -193,7 +193,7 @@
         "time": "8:00 PM",
         "names": [
           "Dwight",
-          "TBA",
+          "Franz",
           "Ronnie"
         ]
       },
@@ -222,7 +222,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Crizelle",
           "Ronnie"
         ]
       },
@@ -233,7 +233,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Jeunesse",
           "Dwight"
         ]
       },
