@@ -1,7 +1,7 @@
 {
   "rosterType": "T1R",
   "monthType": "T2M",
-  "resetToken": "20261006124235",
+  "resetToken": null,
   "roster": {
     "weekLabel": "Oct 05 to Oct 11, 2026",
     "storageKey": "tsv_sigs_oct05tooct112026",
@@ -53,8 +53,8 @@
         "date": "07 Oct 2026",
         "time": "8:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Robbie Galvez",
-        "id": "robbie-galvez"
+        "name": "Arden Galvez",
+        "id": "arden-galvez"
       },
       {
         "day": "Wed",
@@ -94,8 +94,8 @@
         "date": "10 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "TSV Admin",
-        "name": "Arden Galvez",
-        "id": "arden-galvez"
+        "name": "Robbie Galvez",
+        "id": "robbie-galvez"
       },
       {
         "day": "Sat",
@@ -272,7 +272,7 @@
         "day": "Wed",
         "time": "8:00 PM",
         "names": [
-          "Robbie",
+          "Arden",
           "TBA",
           "Dwight"
         ]
@@ -301,7 +301,7 @@
         "day": "Sat",
         "time": "6:00 PM",
         "names": [
-          "Arden",
+          "Robbie",
           "TBA",
           "Jay"
         ]
