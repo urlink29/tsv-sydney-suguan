@@ -111,8 +111,8 @@
         "date": "10 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "AV Monitor",
-        "name": "Jay Beltran",
-        "id": "jay-beltran"
+        "name": "Dwight Alegros",
+        "id": "dwight-alegros"
       },
       {
         "day": "Sun",
@@ -136,8 +136,8 @@
         "date": "11 Oct 2026",
         "time": "8:00 AM Worship Service",
         "duty": "AV Monitor",
-        "name": "Dwight Alegros",
-        "id": "dwight-alegros"
+        "name": "Jay Beltran",
+        "id": "jay-beltran"
       }
     ],
     "officers": [
@@ -303,7 +303,7 @@
         "names": [
           "Robbie",
           "TBA",
-          "Jay"
+          "Dwight"
         ]
       },
       {
@@ -314,7 +314,7 @@
         "names": [
           "Bryan",
           "TBA",
-          "Dwight"
+          "Jay"
         ]
       },
       {
