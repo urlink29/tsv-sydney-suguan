@@ -1,7 +1,7 @@
 {
   "rosterType": "T1R",
   "monthType": "T2M",
-  "resetToken": "20261026143958",
+  "resetToken": null,
   "roster": {
     "weekLabel": "Oct 26 to Nov 01, 2026",
     "storageKey": "tsv_sigs_oct26tonov012026",
@@ -35,7 +35,7 @@
         "date": "28 Oct 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Joanna Abinguna",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -60,7 +60,7 @@
         "date": "28 Oct 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Benaur Valle",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -101,7 +101,7 @@
         "date": "31 Oct 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Dulcine Luzon",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -126,7 +126,7 @@
         "date": "01 Nov 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Neus Baquir",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -501,7 +501,7 @@
         "time": "6:30 AM",
         "names": [
           "Jacob",
-          "TBA",
+          "Joanna",
           "Jay"
         ]
       },
@@ -512,7 +512,7 @@
         "time": "8:00 PM",
         "names": [
           "Arden",
-          "TBA",
+          "Benaur",
           "Robbie"
         ]
       },
@@ -541,7 +541,7 @@
         "time": "6:00 PM",
         "names": [
           "Karez",
-          "TBA",
+          "Dulcine",
           "Ronnie"
         ]
       },
@@ -552,7 +552,7 @@
         "time": "8:00 AM",
         "names": [
           "Jay",
-          "TBA",
+          "Neus",
           "Bryan"
         ]
       }
