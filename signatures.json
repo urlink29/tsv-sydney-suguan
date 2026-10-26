@@ -1,55 +1,6 @@
 {
-  "storageKey": "tsv_sigs_oct19tooct252026",
-  "sigs": {
-    "row_1": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "19 Oct 2026, 02:56 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_2": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "19 Oct 2026, 02:56 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_15": {
-      "data": "Jay Beltran",
-      "type": "type",
-      "ts": "19 Oct 2026, 02:56 pm",
-      "memberName": "Jay Beltran"
-    },
-    "row_10": {
-      "data": "Arden Galvez",
-      "type": "type",
-      "ts": "19 Oct 2026, 03:00 pm",
-      "memberName": "Arden Galvez"
-    },
-    "row_7": {
-      "data": "Dwight Alegros",
-      "type": "type",
-      "ts": "19 Oct 2026 at 03:00 pm",
-      "memberName": "Dwight Alegros"
-    },
-    "row_0": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "19 Oct 2026 at 04:05 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_12": {
-      "data": "Ronnie Cunanan",
-      "type": "type",
-      "ts": "19 Oct 2026 at 04:05 pm",
-      "memberName": "Ronnie Cunanan"
-    },
-    "row_13": {
-      "data": "Bryan Catacutan",
-      "type": "type",
-      "ts": "24 Oct 2026 at 03:09 pm",
-      "memberName": "Bryan Catacutan"
-    }
-  },
+  "storageKey": "tsv_sigs_oct26tonov012026",
+  "sigs": {},
   "leaveRequests": {},
   "hvoAssignments": {}
 }
