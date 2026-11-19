@@ -1,7 +1,7 @@
 {
   "rosterType": "T1R",
   "monthType": "T1M",
-  "resetToken": "20261116150704",
+  "resetToken": null,
   "roster": {
     "weekLabel": "Nov 16 to Nov 22, 2026",
     "storageKey": "tsv_sigs_nov16tonov222026",
@@ -35,7 +35,7 @@
         "date": "18 Nov 2026",
         "time": "6:30 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "AJ Corona",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -60,7 +60,7 @@
         "date": "18 Nov 2026",
         "time": "8:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Daniel Anunciacion",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -101,7 +101,7 @@
         "date": "21 Nov 2026",
         "time": "6:00 PM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Marseval Abella",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -126,7 +126,7 @@
         "date": "22 Nov 2026",
         "time": "8:00 AM Worship Service",
         "duty": "HVO",
-        "name": "TBA",
+        "name": "Leinad Diaz",
         "id": null,
         "skip": "Pre-Assigned"
       },
@@ -341,7 +341,7 @@
         "time": "6:30 AM",
         "names": [
           "Jay",
-          "TBA",
+          "AJ",
           "Jacob"
         ]
       },
@@ -352,7 +352,7 @@
         "time": "8:00 PM",
         "names": [
           "Robbie",
-          "TBA",
+          "Daniel",
           "Arden"
         ]
       },
@@ -381,7 +381,7 @@
         "time": "6:00 PM",
         "names": [
           "Arden",
-          "TBA",
+          "Marseval",
           "Robbie"
         ]
       },
@@ -392,7 +392,7 @@
         "time": "8:00 AM",
         "names": [
           "Bryan",
-          "TBA",
+          "Leinad",
           "Jay"
         ]
       },
